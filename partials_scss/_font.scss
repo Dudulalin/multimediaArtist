@@ -1,0 +1,18 @@
+@font-face {
+    font-family: Regular_bold;
+    src: url(../media/font/roboto/Roboto-Bold.ttf) format("TrueType");
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 120px;
+    }
+
+    h2 {
+        font-size: 100px;
+    }
+
+    h3 {
+        font-size: 80px;
+    }
+}
