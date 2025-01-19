@@ -61,6 +61,7 @@ section.projects {
                     grid-area: 4 / 1 / 5 / 2;
                     text-transform: capitalize;
                     justify-self: center;
+                    color: var(--carbon);
                 }
 
 
@@ -83,10 +84,15 @@ section.projects {
                     grid-area: 2 / 4 / 3 / 5;
                     align-self: flex-end;
                     color: var(--olive);
+                    margin: 0;
+                    font-weight: 500;
                 }
 
                 &--extrainfo {
                     grid-area: 3 / 4 / 4 / 5;
+                    align-self: start;
+                    margin: 0;
+                    color: var(--smokey);
                 }
 
                 &--title {
@@ -98,6 +104,7 @@ section.projects {
                     margin-left: 0;
                     padding-top: 300px;
                     color: var(--olive);
+                    font-weight: 400;
                 }
 
             }
@@ -140,7 +147,7 @@ section.projects {
                     align-self: center;
                     justify-self: center;
                     padding-right: 45px;
-                    text-transform: uppercase ;
+                    text-transform: uppercase;
 
 
 

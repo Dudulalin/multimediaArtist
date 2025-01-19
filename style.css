@@ -262,6 +262,7 @@ section.projects .projets--aurorae--content--worktype {
   grid-area: 4/1/5/2;
   text-transform: capitalize;
   justify-self: center;
+  color: var(--carbon);
 }
 section.projects .projets--aurorae--content--img-big {
   grid-area: 1/2/4/3;
@@ -277,9 +278,14 @@ section.projects .projets--aurorae--content--subtitle {
   grid-area: 2/4/3/5;
   align-self: flex-end;
   color: var(--olive);
+  margin: 0;
+  font-weight: 500;
 }
 section.projects .projets--aurorae--content--extrainfo {
   grid-area: 3/4/4/5;
+  align-self: start;
+  margin: 0;
+  color: var(--smokey);
 }
 section.projects .projets--aurorae--content--title {
   grid-area: 1/3/4/4;
@@ -290,6 +296,7 @@ section.projects .projets--aurorae--content--title {
   margin-left: 0;
   padding-top: 300px;
   color: var(--olive);
+  font-weight: 400;
 }
 section.projects .projets--confort {
   background-color: var(--floral);
@@ -378,14 +385,32 @@ section.projects .projets--chaos--content--title {
   background-color: var(--floral);
   width: 100%;
   height: 100vh;
-  border: red solid 2px;
+}
+.services--border {
+  z-index: 100;
+  border-top: 8px solid var(--carbon);
+  width: 85%;
+  grid-area: 1/1/2/5;
 }
 .services--content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr) 0.4fr 1fr 0.4fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  width: 80vw;
+  /*
+  .div7 {
+      grid-area: 3 / 4 / 4 / 5;
+  }
+
+  .div8 {
+      grid-area: 5 / 2 / 6 / 3;
+  }
+
+  .div9 {
+      grid-area: 5 / 4 / 6 / 5;
+  }*/
   justify-items: stretch;
   align-items: center;
   width: 80vw;
@@ -393,84 +418,91 @@ section.projects .projets--chaos--content--title {
   justify-content: center;
   align-content: space-evenly;
   margin-inline: auto auto;
-  /*
-  .div2 {
-      grid-area: 1 / 2 / 2 / 3;
-  }
-
-  .div3 {
-
-  }
-
-  .div4 {
-
-  }*/
+}
+.services--content--title {
+  grid-area: 1/1/2/5;
+  color: var(--charbon);
+  font-weight: 200;
+  font-size: 120px;
+  margin: 0;
+  align-self: center;
 }
 .services--content--card--01 {
   display: grid;
-  grid-area: 1/1/2/2;
-  width: 30vw;
-  height: 30vh;
-  border: 4px solid var(--olive);
-  border-radius: 5px;
+  grid-area: 2/1/4/3;
 }
-.services--content--card--01--title {
-  align-self: center;
-  justify-self: center;
-  font-weight: 300;
-  font-size: 65px;
-  text-align: center;
-  color: var(--olive);
+.services--content--card--01--app {
+  align-self: flex-end;
+  justify-self: end;
+  margin-bottom: 2%;
+  width: 20%;
+  height: 80%;
+}
+.services--content--card--01--app--01 {
+  height: 100%;
+  margin-right: 10%;
+}
+.services--content--card--01--app--02 {
+  height: 100%;
 }
 .services--content--card--02 {
   display: grid;
-  grid-area: 1/2/2/3;
-  width: 30vw;
-  height: 30vh;
-  border: 4px solid var(--olive);
-  border-radius: 5px;
+  grid-area: 2/3/4/5;
 }
-.services--content--card--02--title {
-  align-self: center;
-  justify-self: center;
-  font-weight: 300;
-  font-size: 65px;
-  text-align: center;
-  color: var(--olive);
+.services--content--card--02--app {
+  align-self: flex-end;
+  justify-self: end;
+  margin-bottom: 2%;
+  width: 25%;
+  height: 80%;
+}
+.services--content--card--02--app--01 {
+  height: 100%;
+  margin-right: 10%;
+}
+.services--content--card--02--app--02 {
+  height: 100%;
 }
 .services--content--card--03 {
   display: grid;
-  grid-area: 2/1/3/2;
-  width: 30vw;
-  height: 30vh;
-  border: 4px solid var(--olive);
-  border-radius: 5px;
+  grid-area: 4/1/6/3;
 }
-.services--content--card--03--title {
-  align-self: center;
-  justify-self: center;
-  font-weight: 300;
-  font-size: 65px;
-  text-align: center;
-  color: var(--olive);
+.services--content--card--03--app {
+  align-self: flex-end;
+  justify-self: end;
+  margin-bottom: 2%;
+  width: 25%;
+  height: 80%;
+}
+.services--content--card--03--app--01 {
+  height: 100%;
+  margin-right: 10%;
+}
+.services--content--card--03--app--02 {
+  height: 100%;
 }
 .services--content--card--04 {
   display: grid;
-  grid-area: 2/2/3/3;
-  width: 30vw;
-  height: 30vh;
-  border: 4px solid var(--olive);
-  border-radius: 5px;
+  grid-area: 4/3/6/5;
 }
-.services--content--card--04--title {
-  align-self: center;
-  justify-self: center;
-  font-weight: 300;
-  font-size: 65px;
-  text-align: center;
-  color: var(--olive);
+.services--content--card--04--app {
+  align-self: flex-end;
+  justify-self: end;
+  margin-bottom: 2%;
+  width: 25%;
+  height: 80%;
+}
+.services--content--card--04--app--01 {
+  height: 100%;
+  margin-right: 10%;
+}
+.services--content--card--04--app--02 {
+  height: 100%;
 }
 
+/*
+width: 95%;
+                height: 90%;*/
 .button {
   width: 55%;
   height: 65%;
@@ -546,6 +578,28 @@ a {
     font-size: 24px;
   }
 }
+.card {
+  width: 80%;
+  height: 90%;
+  border: 4px solid var(--olive);
+  border-radius: 5px;
+}
+.card--title {
+  align-self: center;
+  justify-self: center;
+  font-weight: 300;
+  font-size: 105px;
+  text-align: center;
+  color: var(--olive);
+}
+.card:hover {
+  background-color: var(--olive);
+  border-color: var(--khaki);
+}
+.card:hover .card--title {
+  color: var(--floral);
+}
+
 a {
   color: var(--smoky);
   font-weight: 500;
