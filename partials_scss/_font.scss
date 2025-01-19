@@ -1,18 +1,56 @@
-@font-face {
-    font-family: Regular_bold;
-    src: url(../media/font/roboto/Roboto-Bold.ttf) format("TrueType");
+
+h1 {
+    font-family: "Playfair Display";
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+p{
+    font-family: "Montserrat";
+}
+
+a{
+    font-family: "Montserrat";
 }
 
 @media only screen and (min-width: 768px) {
+    h1.logo{
+        font-size: 35px;
+    }
+
     h1 {
         font-size: 120px;
     }
 
     h2 {
-        font-size: 100px;
+        font-size: 50px;
     }
 
     h3 {
-        font-size: 80px;
+        font-size: 45px;
     }
+
+    h4 {
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 24px;
+    }
+    
 }

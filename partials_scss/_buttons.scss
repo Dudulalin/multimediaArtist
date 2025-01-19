@@ -1,0 +1,18 @@
+.button {
+    width: 55%;
+    height: 65%;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: var(--carbon);
+    border-color: var(--carbon);
+    font-weight: 400;
+    justify-self: center;
+    align-self: flex-end;
+
+    &:hover {
+        color: var(--khaki);
+        border-color: var(--khaki);
+    }
+}

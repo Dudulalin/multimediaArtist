@@ -1,12 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Sitmonternna Yi</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1 class="logo">Sitmonternna yi</h1>
+        <input id="burger" type="checkbox" />
+
+        <label for="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section class="about">
+        <div class="about--content">
+            <img class="about--contentside--img--small"  src="./media/me/me_small.jpg" alt="img">
+                <img class="about--contentside--img--big" src="./media/me/me.jpg" alt="img">
+
+                <div class="about--content--space"></div>
+
+            <h4 class="about--content--subtitle--01">designer graphique<h4>
+            <h4 class="about--content--subtitle--02">art interactive<h4>
+            <h4 class="about--content--subtitle--03">production<h4>
+
+            <h1 class="about--content--name">Sitmonternna yi</h1>
+
+            <p class="about--content--descp">
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+             incididunt ut labore et
+             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit
+                                        amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim
+                                        veniam, quis nostrud
+            </p>
+            <a class="about--content--link cv-button" href="#">Voir mon cv > </a>
+            
+             <div class="about--content--app">
+                <a class="about--content--app--mail app" href="#">
+                                        <img src="./media/app/mail.svg" alt="app">
+             </a>
+              <a class="about--content--app--ln app" href="#">
+                                        <img src="./media/app/ln.svg" alt="app">
+            </a>
+            <a class="about--content--app--be app" href="#">
+                                        <img src="./media/app/be.svg" alt="app">
+            </a>  
+             </div>
+            
+            <div class="about--content--border"></div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="projets--aurorae">
+            <div class="projets--aurorae--content">
+                <img class="projets--aurorae--content--img-big" src="./media/projects/thumbnail/aurorae-big.jpg" alt="">
+                <h2 class="projets--aurorae--content--title">Aurorae</h2>
+                <img class="projets--aurorae--content--img-small" src="./media/projects/thumbnail/aurorae-small.jpg"
+                    alt="">
+                <h3 class="projets--aurorae--content--subtitle">Title 1</h3>
+                <p class="projets--aurorae--content--extrainfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do </p>
+                <p class="projets--aurorae--content--worktype">2023 <br> projet scolaire</p>
+                <p class="projets--aurorae--content--descp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="projets--aurorae--content--more button">en <br> savoir <br> plus</button>
+                <p class="projets--aurorae--content--classification"> PRODUCTION VIDEO & SONORE</p>
+                <div class="projets--aurorae--content--border"></div>
+            </div>
+
+        </div>
+
+        <div class="projets--confort">
+            <img class="projets--confort--img-big" src="" alt="">
+            <h2 class="projets--confort--title">confort dore</h2>
+            <img class="projets--confort--img-small" src="" alt="">
+            <h3 class="projets--confort--subtitle">Title 1</h3>
+            <p class="projets--confort--extrainfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+            <p class="projets--confort--date"></p>
+            <p class="projets--confort--type"></p>
+            <p class="projets--confort--descp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button class="projets--confort--more button">en savoir plus</button>
+        </div>
+
+        <div class="projets--chaos">
+            <div class="projets--chaos--content">
+                <img class="projets--chaos--content--img-big" src="./media/projects/thumbnail/chaos_big.jpg" alt="">
+                <h2 class="projets--chaos--content--title">chaos dore</h2>
+                <img class="projets--chaos--content--img-small" src="./media/projects/thumbnail/chaos_small.jpg" alt="">
+                <h3 class="projets--chaos--content--subtitle">Title 1</h3>
+                <p class="projets--chaos--content--extrainfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do </p>
+                <p class="projets--chaos--content--worktype">2024 <br> projet scolaire</p>
+                <p class="projets--chaos--content--descp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="projets--chaos--more button" style="grid-area: 4 / 5 / 5 / 6; width: 55%;
+    height: 65%;">en savoir plus</button>
+                <p class="projets--chaos--content--classification"> Modelisation 3d & montage video</p>
+                <div class="projets--chaos--content--border"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="services">
+        <div class="services--content">
+            <div class="services--content--card--01">
+                <h3 class="services--content--card--01--title">production  <br> video</h3>
+                <img class="services--content--card--01--app app" src="" alt="">
+                <img class="services--content--card--01--app app" src="" alt="">
+            </div>
+
+            <div class="services--content--card--02">
+                <h3 class="services--content--card--02--title">design <br> graphic</h3>
+                <img class="services--content--card--02--app app" src="" alt="">
+                <img class="services--content--card--02--app app" src="" alt="">
+            </div>
+
+            <div class="services--content--card--03">
+                <h3 class="services--content--card--03--title">art <br> interactive</h3>
+                <img class="services--content--card--03--app app" src="" alt="">
+                <img class="services--content--card--03--app app" src="" alt="">
+            </div>
+
+            <div class="services--content--card--04">
+                <h3 class="services--content--card--04--title">modelisation <br> 3d</h3>
+                <img class="services--content--card--04--app app" src="" alt="">
+                <img class="services--content--card--04--app app" src="" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer--content">
+            <h4 class="footer--content--occupation">designer graphique<h4>
+                    <h4 class="footer--content--occupation">art interactive<h4>
+                            <h4 class="footer--content--occupation">production<h4>
+                                    <a class="footer--content--app--mail app" href="#">
+                                        <img src="./media/app/mail.svg" alt="app">
+                                    </a>
+                                    <a class="footer--content--app--ln app" href="#">
+                                        <img src="./media/app/ln.svg" alt="app">
+                                    </a>
+                                    <a class="footer--content--app--be app" href="#">
+                                        <img src="./media/app/be.svg" alt="app">
+                                    </a>
+        </div>
+    </footer>
+    <script src="./main.js"></script>
 </body>
+
 </html>
