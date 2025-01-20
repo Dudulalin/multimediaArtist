@@ -9,7 +9,7 @@ section.about {
            // border: 2px red solid;
 
             display: grid;
-            grid-template-columns: 0.7fr 1fr  0.6fr 0.5fr repeat(2, 0.5fr) 0.7fr;
+            grid-template-columns: 0.7fr 1fr 7.5vw repeat(3, 6vw) 0.7fr;
             grid-template-rows:  5vh 0.5fr 1fr 0.1fr 0.2fr;
             grid-column-gap: 20px;
             grid-row-gap: 0px;
@@ -18,7 +18,7 @@ section.about {
 
             &--border{
                 width: 100%;
-                border-bottom: 5px var(--olive) solid;
+                border-bottom: 10px var(--olive) solid;
                 grid-area: 5 / 3 / 6 / 8;
             }
 
@@ -59,20 +59,22 @@ section.about {
             }
 
             &--name {
-                grid-area: 2 / 3 / 3 / 7;
+                grid-area: 2 / 3 / 3 / 8;
                 margin: 0;
                 align-self: flex-start;
             }
 
             &--descp {
-                grid-area: 3 / 3 / 4 / 6;
-                width: 70%;
+                grid-area: 3 / 3 / 4 / 7;
+                width: 95%;
                 align-self: flex-end;
+                margin: 0;
             }
 
             &--link {
                 grid-area: 4 / 3 / 5 / 5;
-                align-self: center;
+                align-self: flex-start;
+                margin: 2% 0 0 0;
             }
 
             &--app {
@@ -81,6 +83,7 @@ section.about {
                 &--ln {
                     justify-self: flex-start;
                     text-decoration: none;
+                    
                 }
 
                 &--mail {

@@ -6,7 +6,7 @@ section.about {
 }
 section.about .about--content {
   display: grid;
-  grid-template-columns: 0.7fr 1fr 0.6fr 0.5fr repeat(2, 0.5fr) 0.7fr;
+  grid-template-columns: 0.7fr 1fr 7.5vw repeat(3, 6vw) 0.7fr;
   grid-template-rows: 5vh 0.5fr 1fr 0.1fr 0.2fr;
   grid-column-gap: 20px;
   grid-row-gap: 0px;
@@ -15,7 +15,7 @@ section.about .about--content {
 }
 section.about .about--content--border {
   width: 100%;
-  border-bottom: 5px var(--olive) solid;
+  border-bottom: 10px var(--olive) solid;
   grid-area: 5/3/6/8;
 }
 section.about .about--content--img--small {
@@ -44,18 +44,20 @@ section.about .about--content--subtitle--03 {
   margin: 0;
 }
 section.about .about--content--name {
-  grid-area: 2/3/3/7;
+  grid-area: 2/3/3/8;
   margin: 0;
   align-self: flex-start;
 }
 section.about .about--content--descp {
-  grid-area: 3/3/4/6;
-  width: 70%;
+  grid-area: 3/3/4/7;
+  width: 95%;
   align-self: flex-end;
+  margin: 0;
 }
 section.about .about--content--link {
   grid-area: 4/3/5/5;
-  align-self: center;
+  align-self: flex-start;
+  margin: 2% 0 0 0;
 }
 section.about .about--content--app {
   grid-area: 5/3/6/5;
@@ -234,18 +236,19 @@ section.projects .projets--aurorae--content--classification {
   grid-area: 1/6/5/7;
   writing-mode: vertical-lr;
   text-orientation: upright;
+  text-transform: uppercase;
   color: var(--carbon);
-  font-size: 16px;
+  font-size: 30px;
   align-self: center;
   justify-self: center;
-  padding-right: 45px;
+  padding-right: 65%;
 }
 section.projects .projets--aurorae--content--border {
   justify-self: center;
   align-self: center;
   grid-area: 1/6/5/7;
   width: 5px;
-  height: 550px;
+  height: 40vh;
   background-color: var(--olive);
 }
 section.projects .projets--aurorae--content--more {
@@ -267,18 +270,19 @@ section.projects .projets--aurorae--content--worktype {
 section.projects .projets--aurorae--content--img-big {
   grid-area: 1/2/4/3;
   width: 95%;
-  align-self: flex-end;
+  margin: 45% 0 0 0;
+  align-self: center;
 }
 section.projects .projets--aurorae--content--img-small {
   grid-area: 1/4/2/5;
   width: 100%;
-  align-self: center;
+  align-self: flex-end;
 }
 section.projects .projets--aurorae--content--subtitle {
   grid-area: 2/4/3/5;
   align-self: flex-end;
   color: var(--olive);
-  margin: 0;
+  margin: 0 0 1% 0;
   font-weight: 500;
 }
 section.projects .projets--aurorae--content--extrainfo {
@@ -303,6 +307,87 @@ section.projects .projets--confort {
   width: 100%;
   height: 100vh;
 }
+section.projects .projets--confort--content {
+  display: grid;
+  grid-template-columns: 0.25fr 0.3fr 0.5fr 0.3fr 1fr 0.4fr;
+  grid-template-rows: 0.7fr 0.12fr 1fr 0.3fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 80vw;
+  height: 80vh;
+  margin-inline: auto auto;
+}
+section.projects .projets--confort--content--classification {
+  grid-area: 2/1/4/2;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-transform: uppercase;
+  color: var(--carbon);
+  font-size: 30px;
+  align-self: center;
+  justify-self: center;
+  padding-left: 35%;
+}
+section.projects .projets--confort--content--border {
+  justify-self: center;
+  align-self: center;
+  grid-area: 2/1/4/2;
+  width: 5px;
+  height: 40vh;
+  background-color: var(--olive);
+}
+section.projects .projets--confort--content--more {
+  grid-area: 4/2/5/3;
+  justify-self: center;
+  align-self: flex-end;
+}
+section.projects .projets--confort--content--descp {
+  grid-area: 4/3/5/6;
+  align-self: flex-end;
+}
+section.projects .projets--confort--content--worktype {
+  grid-area: 4/6/5/7;
+  align-self: flex-end;
+  text-transform: capitalize;
+  justify-self: start;
+  color: var(--carbon);
+}
+section.projects .projets--confort--content--img-big {
+  grid-area: 2/5/4/6;
+  width: 75%;
+  margin: -20% 0 0 0;
+  align-self: center;
+}
+section.projects .projets--confort--content--img-small {
+  grid-area: 1/2/2/4;
+  width: 100%;
+  align-self: flex-end;
+}
+section.projects .projets--confort--content--subtitle {
+  grid-area: 2/2/3/4;
+  align-self: flex-end;
+  color: var(--olive);
+  margin: 0 0 1% 0;
+  font-weight: 500;
+}
+section.projects .projets--confort--content--extrainfo {
+  grid-area: 3/2/4/4;
+  align-self: start;
+  margin: 0;
+  color: var(--smokey);
+}
+section.projects .projets--confort--content--title {
+  grid-area: 1/4/4/5;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  align-self: center;
+  justify-self: end;
+  /* margin-right: 0; */
+  padding-top: 65%;
+  font-size: 60px;
+  color: var(--olive);
+  font-weight: 400;
+}
 section.projects .projets--chaos {
   background-color: var(--floral);
   width: 100%;
@@ -311,7 +396,7 @@ section.projects .projets--chaos {
 section.projects .projets--chaos--content {
   display: grid;
   grid-template-columns: 0.15fr 0.25fr 0.2fr 0.15fr 0.1fr 0.05fr;
-  grid-template-rows: 0.5fr 0.2fr 1fr 0.4fr;
+  grid-template-rows: 0.5fr 0.1fr 1fr 0.3fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   width: 80vw;
@@ -323,10 +408,10 @@ section.projects .projets--chaos--content--classification {
   writing-mode: vertical-lr;
   text-orientation: upright;
   color: var(--carbon);
-  font-size: 16px;
+  font-size: 30px;
   align-self: center;
   justify-self: center;
-  padding-right: 45px;
+  padding-right: 65%;
   text-transform: uppercase;
 }
 section.projects .projets--chaos--content--border {
@@ -334,7 +419,7 @@ section.projects .projets--chaos--content--border {
   align-self: center;
   grid-area: 1/6/5/7;
   width: 5px;
-  height: 650px;
+  height: 50vh;
   background-color: var(--olive);
 }
 section.projects .projets--chaos--content--more {
@@ -351,24 +436,31 @@ section.projects .projets--chaos--content--worktype {
   grid-area: 4/1/5/2;
   text-transform: capitalize;
   justify-self: center;
+  color: var(--carbon);
 }
 section.projects .projets--chaos--content--img-big {
   grid-area: 1/2/4/3;
   width: 95%;
-  align-self: flex-end;
+  margin: 45% 0 0 0;
+  align-self: center;
 }
 section.projects .projets--chaos--content--img-small {
   grid-area: 1/4/2/5;
   width: 100%;
-  align-self: center;
+  align-self: flex-end;
 }
 section.projects .projets--chaos--content--subtitle {
   grid-area: 2/4/3/5;
   align-self: flex-end;
   color: var(--olive);
+  margin: 0 0 1% 0;
+  font-weight: 500;
 }
 section.projects .projets--chaos--content--extrainfo {
   grid-area: 3/4/4/5;
+  align-self: start;
+  margin: 0;
+  color: var(--smokey);
 }
 section.projects .projets--chaos--content--title {
   grid-area: 1/3/4/4;
@@ -379,6 +471,7 @@ section.projects .projets--chaos--content--title {
   margin-left: 0;
   padding-top: 300px;
   color: var(--olive);
+  font-weight: 400;
 }
 
 .services {
@@ -388,8 +481,8 @@ section.projects .projets--chaos--content--title {
 }
 .services--border {
   z-index: 100;
-  border-top: 8px solid var(--carbon);
-  width: 85%;
+  border-top: 15px solid var(--carbon);
+  width: 55%;
   grid-area: 1/1/2/5;
 }
 .services--content {
@@ -399,18 +492,6 @@ section.projects .projets--chaos--content--title {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   width: 80vw;
-  /*
-  .div7 {
-      grid-area: 3 / 4 / 4 / 5;
-  }
-
-  .div8 {
-      grid-area: 5 / 2 / 6 / 3;
-  }
-
-  .div9 {
-      grid-area: 5 / 4 / 6 / 5;
-  }*/
   justify-items: stretch;
   align-items: center;
   width: 80vw;
@@ -421,10 +502,10 @@ section.projects .projets--chaos--content--title {
 }
 .services--content--title {
   grid-area: 1/1/2/5;
-  color: var(--charbon);
-  font-weight: 200;
-  font-size: 120px;
-  margin: 0;
+  color: var(--carbon);
+  font-weight: 250;
+  font-size: 170px;
+  margin-top: 0;
   align-self: center;
 }
 .services--content--card--01 {
@@ -435,8 +516,9 @@ section.projects .projets--chaos--content--title {
   align-self: flex-end;
   justify-self: end;
   margin-bottom: 2%;
-  width: 20%;
+  width: 25%;
   height: 80%;
+  grid-area: 3/2/4/3;
 }
 .services--content--card--01--app--01 {
   height: 100%;
@@ -455,6 +537,7 @@ section.projects .projets--chaos--content--title {
   margin-bottom: 2%;
   width: 25%;
   height: 80%;
+  grid-area: 3/4/4/5;
 }
 .services--content--card--02--app--01 {
   height: 100%;
@@ -473,6 +556,7 @@ section.projects .projets--chaos--content--title {
   margin-bottom: 2%;
   width: 25%;
   height: 80%;
+  grid-area: 5/2/6/3;
 }
 .services--content--card--03--app--01 {
   height: 100%;
@@ -491,6 +575,7 @@ section.projects .projets--chaos--content--title {
   margin-bottom: 2%;
   width: 25%;
   height: 80%;
+  grid-area: 5/4/6/5;
 }
 .services--content--card--04--app--01 {
   height: 100%;
@@ -500,19 +585,16 @@ section.projects .projets--chaos--content--title {
   height: 100%;
 }
 
-/*
-width: 95%;
-                height: 90%;*/
 .button {
   width: 55%;
   height: 65%;
-  font-size: 28px;
+  font-size: 35px;
   text-align: center;
   text-transform: uppercase;
   background-color: transparent;
   color: var(--carbon);
-  border-color: var(--carbon);
-  font-weight: 400;
+  border: 5px solid var(--carbon);
+  font-weight: 450;
   justify-self: center;
   align-self: flex-end;
 }
@@ -563,23 +645,23 @@ a {
     font-size: 35px;
   }
   h1 {
-    font-size: 120px;
+    font-size: 170px;
   }
   h2 {
-    font-size: 50px;
+    font-size: 80px;
   }
   h3 {
-    font-size: 45px;
+    font-size: 55px;
   }
   h4 {
-    font-size: 28px;
+    font-size: 45px;
   }
   p {
-    font-size: 24px;
+    font-size: 35px;
   }
 }
 .card {
-  width: 80%;
+  width: 85%;
   height: 90%;
   border: 4px solid var(--olive);
   border-radius: 5px;
@@ -603,9 +685,13 @@ a {
 a {
   color: var(--smoky);
   font-weight: 500;
-  font-size: 32px;
+  font-size: 50px;
   text-decoration: underline;
 }
 a:hover {
   color: var(--khaki);
+}
+
+.app {
+  height: 4.5vh;
 }/*# sourceMappingURL=style.css.map */
