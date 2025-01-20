@@ -30,7 +30,8 @@ a{
 
 @media only screen and (min-width: 768px) {
     h1.logo{
-        font-size: 35px;
+        font-size: 75px;
+        color: var(--carbon);
     }
 
     h1 {
@@ -51,6 +52,10 @@ a{
 
     p{
         font-size: 35px;
+    }
+
+    h4.footer{
+        font-size: 18px;
     }
     
 }

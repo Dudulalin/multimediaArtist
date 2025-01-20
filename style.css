@@ -76,41 +76,60 @@ section.about .about--content--app--be {
   text-decoration: none;
 }
 
-/*nav.nav {
-    height: 5vh;
-    width: 100%;
-    background-color: var(--floral);
-    position: fixed;
-    border: 2px solid black;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-inline: 3% 3%;
+.footer {
+  background-color: var(--floral);
+}
+.footer--border {
+  width: 100%;
+  height: 3px;
+  background-color: var(--carbon);
+}
+.footer--content {
+  margin-inline: auto auto;
+  display: grid;
+  grid-template-columns: 0.1fr 0.09fr 0.1fr 0.4fr 1fr;
+  grid-template-rows: 0.4fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 90%;
+  height: 15vh;
+}
+.footer--content--occupation {
+  font-size: 18px;
+}
+.footer--content--occupation--01 {
+  grid-area: 1/1/2/2;
+  align-self: end;
+}
+.footer--content--occupation--02 {
+  grid-area: 1/2/2/3;
+  align-self: end;
+}
+.footer--content--occupation--03 {
+  grid-area: 1/3/2/4;
+  align-self: end;
+}
+.footer--content--logo {
+  grid-area: 2/1/3/5;
+  align-self: flex-start;
+  margin: 0;
+}
+.footer--content--app {
+  grid-area: 2/5/3/6;
+  list-style: none;
+  height: 5vh;
+  justify-self: flex-end;
+}
+.footer--content--app--mail {
+  height: 100%;
+}
+.footer--content--app--ln {
+  height: 100%;
+}
+.footer--content--app--be {
+  height: 100%;
+}
 
-    .logo {
-        color: var(--olive);
-        cursor: pointer;
-    }
-
-    .burger {
-        width: 3%;
-
-        & span {
-            display: block;
-            background-color: var(--olive);
-            width: 100%;
-            height: 3px;
-
-            &:nth-child(2) {
-                margin-top: 9%;
-            }
-
-            &:nth-child(3) {
-                margin-top: 11%;
-            }
-    }
-*/
 header {
   display: flex;
   flex-direction: row;
@@ -119,7 +138,7 @@ header {
 }
 header h1 {
   position: fixed;
-  top: 35px;
+  top: 0;
   left: 40px;
   z-index: 6;
 }
@@ -131,29 +150,30 @@ header h1 > span {
 }
 
 input + label {
+  display: flex;
   position: fixed;
-  top: 40px;
+  top: 2.5vh;
   right: 40px;
-  height: 20px;
-  width: 30px;
+  height: 2.5vh;
+  width: 3.5vw;
   z-index: 5;
 }
 input + label span {
   position: absolute;
   width: 100%;
-  height: 2px;
-  top: 50%;
-  margin-top: 3px;
+  height: 3.5px;
   left: 0;
-  display: block;
   background: var(--olive);
   transition: 0.5s;
 }
 input + label span:first-child {
-  top: 3px;
+  align-self: flex-start;
+}
+input + label span:nth-child(2) {
+  align-self: center;
 }
 input + label span:last-child {
-  top: 16px;
+  align-self: flex-end;
 }
 
 label:hover {
@@ -180,7 +200,7 @@ input ~ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 8vh;
   z-index: 3;
   transition: 0.5s;
   transition-delay: 0.5s;
@@ -488,6 +508,11 @@ section.projects .projets--chaos--content--title {
 .services--content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.6fr 1fr 0.3fr 1fr 0.3fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr) 0.4fr 1fr 0.4fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -512,11 +537,14 @@ section.projects .projets--chaos--content--title {
   display: grid;
   grid-area: 2/1/4/3;
 }
+.services--content--card--01--title {
+  grid-area: 2/1/3/3;
+}
 .services--content--card--01--app {
   align-self: flex-end;
   justify-self: end;
-  margin-bottom: 2%;
-  width: 25%;
+  margin-bottom: 4%;
+  width: 45%;
   height: 80%;
   grid-area: 3/2/4/3;
 }
@@ -531,11 +559,15 @@ section.projects .projets--chaos--content--title {
   display: grid;
   grid-area: 2/3/4/5;
 }
+.services--content--card--02--title {
+  grid-area: 2/3/3/5;
+  margin-left: -40%;
+}
 .services--content--card--02--app {
   align-self: flex-end;
   justify-self: end;
-  margin-bottom: 2%;
-  width: 25%;
+  margin-bottom: 4%;
+  width: 50%;
   height: 80%;
   grid-area: 3/4/4/5;
 }
@@ -550,11 +582,14 @@ section.projects .projets--chaos--content--title {
   display: grid;
   grid-area: 4/1/6/3;
 }
+.services--content--card--03--title {
+  grid-area: 4/1/5/3;
+}
 .services--content--card--03--app {
   align-self: flex-end;
   justify-self: end;
-  margin-bottom: 2%;
-  width: 25%;
+  margin-bottom: 4%;
+  width: 45%;
   height: 80%;
   grid-area: 5/2/6/3;
 }
@@ -569,11 +604,15 @@ section.projects .projets--chaos--content--title {
   display: grid;
   grid-area: 4/3/6/5;
 }
+.services--content--card--04--title {
+  grid-area: 4/3/5/5;
+  margin-left: -20%;
+}
 .services--content--card--04--app {
   align-self: flex-end;
   justify-self: end;
-  margin-bottom: 2%;
-  width: 25%;
+  margin-bottom: 4%;
+  width: 50%;
   height: 80%;
   grid-area: 5/4/6/5;
 }
@@ -642,7 +681,8 @@ a {
 
 @media only screen and (min-width: 768px) {
   h1.logo {
-    font-size: 35px;
+    font-size: 75px;
+    color: var(--carbon);
   }
   h1 {
     font-size: 170px;
@@ -658,6 +698,9 @@ a {
   }
   p {
     font-size: 35px;
+  }
+  h4.footer {
+    font-size: 18px;
   }
 }
 .card {
@@ -694,4 +737,5 @@ a:hover {
 
 .app {
   height: 4.5vh;
+  list-style: none;
 }/*# sourceMappingURL=style.css.map */
