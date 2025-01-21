@@ -1,14 +1,16 @@
 .footer {
     background-color: var(--floral);
-    &--border{
+
+    &--border {
         width: 100%;
         height: 3px;
         background-color: var(--carbon);
     }
+
     &--content {
         margin-inline: auto auto;
         display: grid;
-        grid-template-columns:0.1fr 0.09fr 0.1fr 0.4fr 1fr;
+        grid-template-columns: 0.1fr 0.09fr 0.1fr 0.4fr 1fr;
         grid-template-rows: 0.4fr 1fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
@@ -17,45 +19,53 @@
 
         &--occupation {
             font-size: 18px;
-            
+
             &--01 {
                 grid-area: 1 / 1 / 2 / 2;
                 align-self: end;
+                margin: 0;
             }
 
             &--02 {
                 grid-area: 1 / 2 / 2 / 3;
                 align-self: end;
+                margin: 0;
+
             }
 
             &--03 {
                 grid-area: 1 / 3 / 2 / 4;
                 align-self: end;
+                margin: 0;
+
             }
         }
 
         &--logo {
             grid-area: 2 / 1 / 3 / 5;
-            align-self: flex-start;
+            align-self: center;
             margin: 0;
         }
 
         &--app {
             grid-area: 2 / 5 / 3 / 6;
-            list-style: none;
-            height: 5vh;
-            justify-self: flex-end;
+            align-content: center;
+            justify-self: end;
 
-            &--mail{
-                height: 100%;
+            &--ln {
+                justify-self: flex-start;
+                text-decoration: none;
+
             }
 
-            &--ln{
-                height: 100%;
+            &--mail {
+                justify-self: center;
+                text-decoration: none;
             }
 
-            &--be{
-                height: 100%;
+            &--be {
+                justify-self: flex-end;
+                text-decoration: none;
             }
 
         }
