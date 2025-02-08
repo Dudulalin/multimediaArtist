@@ -7,11 +7,13 @@ h1 {
 h2 {
     font-family: "Montserrat";
     text-transform: uppercase;
+    font-weight: 400;
 }
 
 h3 {
     font-family: "Montserrat";
     text-transform: uppercase;
+    font-weight: 300;
 }
 
 h4 {
@@ -22,6 +24,7 @@ h4 {
 
 p{
     font-family: "Montserrat";
+    font-size: 24px;
 }
 
 a{
@@ -29,6 +32,13 @@ a{
 }
 
 @media only screen and (min-width: 768px) {
+
+    .projets{
+        & h2,h3{
+           color: var(--olive); 
+        }
+        
+    }
     h1.logo{
         font-size: 60px;
         color: var(--carbon);
@@ -51,7 +61,7 @@ a{
     }
 
     p{
-        font-size: 18px;
+        font-size: 20px;
     }
 
     h4.footer{
