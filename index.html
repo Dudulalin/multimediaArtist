@@ -15,68 +15,70 @@
 </head>
 
 <body>
-    <header>
+
+    <!-- Burger Icon -->
+
+    <header class="navigation">
         <h1 class="logo">Sitmonternna yi</h1>
-        <input id="burger" type="checkbox" />
+        <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
-        <label for="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-
-        <nav>
+        <!-- Fullscreen Navigation -->
+        <div class="nav-menu">
             <ul>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-
-        </nav>
+        </div>
     </header>
 
     <section class="about">
         <div class="about--content">
-            <img class="about--content--img--small" src="./media/me/me_small.jpg" alt="img">
             <img class="about--content--img--big" src="./media/me/me.jpg" alt="img">
 
+            <div class="about--content--subtitle">
+                <h4 class="about--content--subtitle--01">designer graphique<h4>
+                        <h4 class="about--content--subtitle--02">art interactive<h4>
+                                <h4 class="about--content--subtitle--03">production<h4>
+            </div>
 
-            <h4 class="about--content--subtitle--01">designer graphique<h4>
-                    <h4 class="about--content--subtitle--02">art interactive<h4>
-                            <h4 class="about--content--subtitle--03">production<h4>
 
+            <h1 class="about--content--name">Sitmonternna yi</h1>
 
-                                    <h1 class="about--content--name">Sitmonternna yi</h1>
+            <p class="about--content--descp">
+                Étudiant en multimédia au Collège Montmorency, je développe une expertise
+                diversifiée qui englobe la création artistique en arts multimédias 2D et 3D, la
+                réalisation cinématographique, ainsi que le design graphique. À travers mes
+                projets, je combine créativité et maîtrise technique pour concevoir des contenus
+                visuels captivants, en explorant des approches innovantes dans le storytelling,
+                l’animation, et la composition graphique. Mon objectif est de transformer des
+                idées en expériences visuelles percutantes, en harmonie avec les tendances
+                actuelles et les attentes du domaine.
+            </p>
+            <a class="about--content--link cv-button" href="#" target="_blank">Voir mon cv >
+            </a>
 
-                                    <p class="about--content--descp">
-                                        Étudiant en multimédia au Collège Montmorency, je développe une expertise
-                                        diversifiée qui englobe la création artistique en arts multimédias 2D et 3D, la
-                                        réalisation cinématographique, ainsi que le design graphique. À travers mes
-                                        projets, je combine créativité et maîtrise technique pour concevoir des contenus
-                                        visuels captivants, en explorant des approches innovantes dans le storytelling,
-                                        l’animation, et la composition graphique. Mon objectif est de transformer des
-                                        idées en expériences visuelles percutantes, en harmonie avec les tendances
-                                        actuelles et les attentes du domaine.
-                                    </p>
-                                    <a class="about--content--link cv-button" href="#" target="_blank">Voir mon cv > </a>
+            <div class="about--content--app">
+                <a class="about--content--app--mail" href="#">
+                    <img class="app" src="./media/app/mail.svg" alt="app">
+                </a>
+                <a class="about--content--app--ln" href="#">
+                    <img class="app" src="./media/app/ln.svg" alt="app">
+                </a>
+                <a class="about--content--app--be" href="#">
+                    <img class="app" src="./media/app/be.svg" alt="app">
+                </a>
+            </div>
 
-                                    <div class="about--content--app">
-                                        <a class="about--content--app--mail" href="#">
-                                            <img class="app" src="./media/app/mail.svg" alt="app">
-                                        </a>
-                                        <a class="about--content--app--ln" href="#">
-                                            <img class="app" src="./media/app/ln.svg" alt="app">
-                                        </a>
-                                        <a class="about--content--app--be" href="#">
-                                            <img class="app" src="./media/app/be.svg" alt="app">
-                                        </a>
-                                    </div>
-
-                                    <div class="about--content--border"></div>
+            <div class="about--content--border"></div>
         </div>
     </section>
-
+    
     <section class="projects">
         <div class="projets--aurorae">
             <div class="projets--aurorae--content">
@@ -126,7 +128,7 @@
                 <div class="projets--confort--content--border"></div>
             </div>
         </div>
-
+        
         <div class="projets--chaos">
             <div class="projets--chaos--content">
                 <img class="projets--chaos--content--img-big" src="./media/projects/thumbnail/chaos_big.jpg" alt="">
@@ -148,7 +150,7 @@
         </div>
 
     </section>
-
+<!--
     <section class="services">
         <div class="services--border"></div>
 
@@ -210,7 +212,7 @@
                                     </div>
 
         </div>
-    </footer>
+    </footer>-->
     <script src="./main.js"></script>
 </body>
 

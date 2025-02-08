@@ -1,106 +1,76 @@
-//mode ordi
-@media screen and (min-width: 768px){
-    section.about {
-    background-color: var(--floral);
-    width: 100%;
+.about {
     height: 100vh;
-    padding-block: 10vh 2vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 2px black solid;*/
 
-    .about {
-        &--content {
-           // border: 2px red solid;
+    &--content {
+        height: 80%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 0.4fr 0.6fr;
+        grid-template-rows: 0.2fr 1fr 0.5fr 0.2fr 0.3fr;
+        grid-column-gap: 100px;
+        grid-row-gap: 0px;
 
-            display: grid;
-            grid-template-columns: 0.7fr 1fr 0.5fr repeat(3, 0.4fr) 0.7fr;
-            grid-template-rows:  5vh 0.3fr 1fr 0.1fr 0.2fr;
-            grid-column-gap: 20px;
-            grid-row-gap: 0px;
-            width: 100%;
-            height: 80vh;
+        &--img--big {
+            grid-area: 1 / 1 / 6 / 2;
+            height: 100%;
+            justify-self: flex-end;
+        }
 
-            &--border{
-                width: 100%;
-                border-bottom: 10px var(--olive) solid;
-                grid-area: 5 / 3 / 6 / 8;
+        &--subtitle {
+            grid-area: 1 / 2 / 2 / 3;
+            display: flex;
+            align-content: center;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-end;
+
+            &--01,
+            &--02 {
+                margin: 0 3% 0 0;
             }
 
-            &--img {
-                &--small {
-                    grid-area: 3 / 1 / 6 / 2;
-                    align-self: flex-end;
-                    width: 100%;
-                }
-
-                &--big {
-                    grid-area: 1 / 2 / 6 / 3;
-                    align-self: flex-end;
-                    height: 100%;
-                    
-                }
-            }
-
-            &--subtitle {
-                
-                &--01 {
-                    grid-area: 1 / 3 / 2 / 4;
-                    align-self: flex-end;
-                    margin: 0;
-                }
-
-                &--02 {
-                    grid-area: 1 / 4 / 2 / 5;
-                    align-self: flex-end;
-                    margin: 0;
-                }
-
-                &--03 {
-                    grid-area: 1 / 5 / 2 / 6;
-                    align-self: flex-end;
-                    margin: 0;
-                }
-            }
-
-            &--name {
-                grid-area: 2 / 3 / 3 / 8;
+            &--03 {
                 margin: 0;
-                align-self: flex-start;
-                color: var(--carbon);
-            }
-
-            &--descp {
-                grid-area: 3 / 3 / 4 / 7;
-                width: 95%;
-                align-self: flex-end;
-                margin: 0;
-            }
-
-            &--link {
-                grid-area: 4 / 3 / 5 / 5;
-                align-self: flex-start;
-                margin: 2% 0 0 0;
-            }
-
-            &--app {
-                grid-area: 5 / 3 / 6 / 5;
-                align-content: center;
-                &--ln {
-                    justify-self: flex-start;
-                    text-decoration: none;
-                    
-                }
-
-                &--mail {
-                    justify-self: center;
-                    text-decoration: none;
-                }
-
-                &--be {
-                    justify-self: flex-end;
-                    text-decoration: none;
-                }
             }
         }
-    }
-}
-}
 
+        &--name {
+            grid-area: 2 / 2 / 3 / 3;
+            align-self: flex-start;
+            margin: 0;
+        }
+
+        &--descp {
+            grid-area: 3 / 2 / 4 / 3;
+            width: 40%;
+            text-align: justify;
+            align-self: flex-end;
+        }
+
+        &--link {
+            grid-area: 4 / 2 / 5 / 3;
+            align-self: flex-start;
+            margin: 15px 0 0 0;
+        }
+
+        &--app {
+            grid-area: 5 / 2 / 6 / 3;
+            align-self: flex-start;
+        }
+
+        &--border{
+            grid-area: 5 / 2 / 6 / 3;
+            border: solid 3px var(--carbon);
+            align-self: flex-end;
+        }
+    }
+
+
+
+
+}

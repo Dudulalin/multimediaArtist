@@ -1,4 +1,12 @@
-.app{
-    height: 4.5vh;
-    list-style: none;
-}
+.about--content--app  {
+    & a{
+       text-decoration: none;
+    border-bottom: none;
+    display: inline-block; 
+    }
+    
+
+    &--mail, &--ln{
+        margin: 0 1% 0 0;
+    }
+  }

@@ -1,0 +1,106 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+//Navigation Bar
+.navigation {
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 2px solid var(--smoky);
+    height: 5vh;
+    margin-left: 2;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+
+    .logo {
+        font-size: 30px;
+        margin-left: 3%;
+    }
+
+
+    //Burger Menu
+    .burger-menu {
+        margin-right: 3%;
+        width: 40px;
+        height: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        z-index: 1000;
+
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: var(--smoky);
+            border-radius: 0;
+            transition: all 0.3s ease;
+        }
+
+        &.open {
+            span:nth-child(1) {
+                transform: rotate(45deg) translate(15px, 15px);
+            }
+
+            span:nth-child(2) {
+                opacity: 0;
+            }
+
+            span:nth-child(3) {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    // Fullscreen Navigation Menu
+    .nav-menu {
+        border-bottom: 2px solid var(--smoky);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--floral);
+        color: var(--carbon);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-100%);
+        transition: transform 0.5s ease;
+        z-index: 999;
+
+        &.open {
+            transform: translateY(0);
+        }
+
+        ul {
+            list-style: none;
+            text-align: center;
+
+            li {
+                margin: 20px 0;
+
+                a {
+                    text-decoration: none;
+                    font-size: 5rem;
+                    color: var(--carbon);
+                    transition: color 0.3s;
+
+                    &:hover {
+                        color: var(--khaki);
+                    }
+                }
+            }
+        }
+    }
+}
