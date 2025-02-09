@@ -1068,7 +1068,7 @@ a {
 }
 
 @media only screen and (min-width: 768px) {
-  .projets h2, .projets h3 {
+  .projets {
     color: var(--olive);
   }
   h1.logo {
