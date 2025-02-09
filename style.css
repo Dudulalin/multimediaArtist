@@ -879,6 +879,76 @@
         }
     }
 }*/
+.services {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+.services--border {
+  border-top: 5px var(--olive) solid;
+  width: 45%;
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+.services--container {
+  align-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+.services--container--title {
+  color: var(--khaki);
+  align-self: flex-start;
+  height: 10vh;
+  font-size: 130px;
+  font-weight: 300;
+}
+.services--container--content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  height: 65%;
+  width: 70%;
+}
+.services--container--content--card--01 {
+  grid-area: 1/1/2/2;
+}
+.services--container--content--card--01--app {
+  display: flex;
+  flex-direction: row;
+  height: 5vh;
+}
+.services--container--content--card--02 {
+  grid-area: 1/2/2/3;
+}
+.services--container--content--card--02--app {
+  display: flex;
+  flex-direction: row;
+  height: 5vh;
+}
+.services--container--content--card--03 {
+  grid-area: 2/1/3/2;
+}
+.services--container--content--card--03--app {
+  display: flex;
+  flex-direction: row;
+  height: 5vh;
+}
+.services--container--content--card--04 {
+  grid-area: 2/2/3/3;
+}
+.services--container--content--card--04--app {
+  display: flex;
+  flex-direction: row;
+  height: 5vh;
+}
+
 .button {
   width: 150px;
   height: 150px;
@@ -976,10 +1046,16 @@ a {
   }
 }
 .card {
-  width: 85%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   border: 4px solid var(--olive);
   border-radius: 5px;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .card--title {
   align-self: center;
@@ -988,6 +1064,7 @@ a {
   font-size: 105px;
   text-align: center;
   color: var(--olive);
+  margin-bottom: 5%;
 }
 .card:hover {
   background-color: var(--olive);
@@ -1014,4 +1091,11 @@ a:hover {
 }
 .about--content--app--mail, .about--content--app--ln {
   margin: 0 1% 0 0;
+}
+
+.services img {
+  height: 100%;
+}
+.services img:nth-child(1) {
+  margin-right: 10%;
 }/*# sourceMappingURL=style.css.map */

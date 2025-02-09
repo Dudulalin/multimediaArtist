@@ -10,3 +10,13 @@
         margin: 0 1% 0 0;
     }
   }
+
+  .services{
+    & img{
+        height: 100%;
+
+        &:nth-child(1){
+            margin-right: 10%;
+        }
+    }
+  }
