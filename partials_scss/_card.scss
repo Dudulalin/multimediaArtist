@@ -22,12 +22,12 @@
     }
 
     &:hover {
-        background-color: var(--olive);
+        background-color: whitesmoke;
 
         border-color: var(--khaki);
 
         .card--title {
-            color: var(--floral);
+            color: var(--khaki);
         }
     }
 }

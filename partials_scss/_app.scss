@@ -1,22 +1,29 @@
-.about--content--app  {
-    & a{
-       text-decoration: none;
-    border-bottom: none;
-    display: inline-block; 
+.about--content--app,
+.footer--content--app {
+    & a {
+        text-decoration: none;
+        border-bottom: none;
+        display: inline-block;
     }
-    
 
-    &--mail, &--ln{
+
+    &--mail,
+    &--ln {
         margin: 0 1% 0 0;
     }
-  }
+}
 
-  .services{
-    & img{
+.services {
+    & img {
         height: 100%;
 
-        &:nth-child(1){
+        &:nth-child(1) {
             margin-right: 10%;
         }
     }
-  }
+}
+
+.footer--content--app--mail,
+.footer--content--app--ln{
+    margin-right: 5%;
+}
