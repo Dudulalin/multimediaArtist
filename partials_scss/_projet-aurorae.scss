@@ -1,0 +1,195 @@
+.aurorae {
+
+    &--presents {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &--title {
+            font-size: 180px;
+            color: var(--olive);
+        }
+
+        &--subtitle {
+            align-self: flex-end;
+            margin-right: 25%;
+            margin-bottom: 3%;
+        }
+
+        &--video {
+            width: 55vw;
+            height: 60vh;
+            background-color: aqua;
+        }
+    }
+
+    &--information {
+        width: 100%;
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-inline: 10%;
+
+        &--synopsis {
+            display: grid;
+            grid-template-columns: 0.1fr 1fr;
+            grid-template-rows: 0.4fr 0.8fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 25px;
+            align-self: flex-start;
+            width: 35vw;
+
+            h4 {
+                grid-area: 1 / 2 / 2 / 3;
+            }
+
+            p {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+
+
+            &--border {
+                border-left: 5px solid var(--carbon);
+                grid-area: 1 / 1 / 3 / 2;
+                height: 150%;
+                align-self: center;
+            }
+        }
+
+        &--role {
+            align-self: flex-end;
+            width: 35vw;
+            text-align: right;
+
+            display: grid;
+            grid-template-columns: 1fr 0.1fr;
+            grid-template-rows: 0.4fr 0.8fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 25px;
+
+            h4 {
+                grid-area: 1 / 1 / 2 / 2;
+            }
+
+            p {
+                grid-area: 2 / 1 / 3 / 2;
+            }
+
+            &--border {
+                border-right: 5px solid var(--carbon);
+                height: 150%;
+                align-self: center;
+                justify-self: flex-end;
+                grid-area: 1 / 2 / 3 / 3;
+            }
+
+        }
+
+        &--credits {
+            align-self: flex-start;
+            width: 35vw;
+            display: grid;
+            grid-template-columns: 0.1fr 1fr;
+            grid-template-rows: 0.4fr 0.8fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 25px;
+
+
+            h4 {
+                grid-area: 1 / 2 / 2 / 3;
+            }
+
+            ul {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+
+
+            &--border {
+                border-left: 5px solid var(--carbon);
+                grid-area: 1 / 1 / 3 / 2;
+                height: 150%;
+                align-self: center;
+            }
+        }
+    }
+
+    &--preprod {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        &--border {
+            width: 60vw;
+            border-top: 5px solid var(--carbon);
+            align-self: flex-start;
+            margin-left: -25%;
+        }
+
+        & img {
+            border: var(--smoky) solid 2px;
+        }
+
+        & h2 {
+            align-self: start;
+        }
+
+
+        &--gallery {
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr) 0.2fr;
+            grid-column-gap: 25px;
+            grid-row-gap: 25px;
+            width: 75vw;
+            height: 70vh;
+            align-items: center;
+
+            &--pic1 {
+                grid-area: 1 / 1 / 2 / 2;
+                width: 100%;
+            }
+
+            &--pic2 {
+                grid-area: 1 / 2 / 2 / 3;
+                width: 100%;
+            }
+
+            &--pic3 {
+                grid-area: 1 / 3 / 2 / 4;
+                width: 100%;
+            }
+
+            &--pic4 {
+                grid-area: 2 / 1 / 3 / 2;
+                width: 100%;
+            }
+
+            &--pic5 {
+                grid-area: 2 / 2 / 3 / 3;
+                width: 100%;
+            }
+
+            &--pic6 {
+                grid-area: 2 / 3 / 3 / 4;
+                width: 100%;
+            }
+
+            &--btn {
+                grid-area: 3 / 3 / 4 / 4;
+                align-self: flex-start;
+                justify-self: flex-end;
+            }
+        }
+
+
+    }
+}
