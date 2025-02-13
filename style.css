@@ -1469,4 +1469,77 @@ a:hover {
   .aurorae--preprod--gallery--btn {
     grid-area: 4/2/5/3;
   }
+}
+@media screen and (min-width: 375px) and (max-width: 570px) {
+  .aurorae--presents--title {
+    font-size: 50px;
+  }
+  .aurorae--presents--subtitle {
+    font-size: 18px;
+    margin: 0;
+    align-self: center;
+  }
+  .aurorae--presents--video {
+    width: 65vw;
+    height: 20vh;
+  }
+  .aurorae--information {
+    padding-inline: 6%;
+    height: 300vh;
+  }
+  .aurorae--information--synopsis, .aurorae--information--role, .aurorae--information--credits {
+    grid-column-gap: 20px;
+    width: 65vw;
+  }
+  .aurorae--information p {
+    font-size: 10px;
+  }
+  .aurorae--information h3 {
+    font-size: 25px;
+  }
+  .aurorae--preprod {
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .aurorae--preprod--border {
+    border-top: 3px solid var(--carbon);
+    width: 120%;
+  }
+  .aurorae--preprod h2 {
+    font-size: 30px;
+  }
+  .aurorae--preprod--gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 15px;
+    height: 160vh;
+  }
+  .aurorae--preprod--gallery--pic1 {
+    grid-area: 1/1/2/2;
+  }
+  .aurorae--preprod--gallery--pic2 {
+    grid-area: 2/1/3/2;
+  }
+  .aurorae--preprod--gallery--pic3 {
+    grid-area: 3/1/4/2;
+  }
+  .aurorae--preprod--gallery--pic4 {
+    grid-area: 4/1/5/2;
+  }
+  .aurorae--preprod--gallery--pic5 {
+    grid-area: 5/1/6/2;
+  }
+  .aurorae--preprod--gallery--pic6 {
+    grid-area: 6/1/7/2;
+  }
+  .aurorae--preprod--gallery--btn {
+    grid-area: 7/1/8/2;
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
