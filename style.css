@@ -1183,7 +1183,7 @@ a:hover {
   margin-right: 5%;
 }
 
-.aurorae--presents {
+.presents {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -1191,21 +1191,22 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
-.aurorae--presents--title {
+.presents--title {
   font-size: 180px;
   color: var(--olive);
 }
-.aurorae--presents--subtitle {
+.presents--subtitle {
   align-self: flex-end;
   margin-right: 25%;
   margin-bottom: 3%;
 }
-.aurorae--presents--video {
+.presents--video {
   width: 55vw;
   height: 60vh;
   background-color: aqua;
 }
-.aurorae--information {
+
+.information {
   width: 100%;
   height: 200vh;
   display: flex;
@@ -1214,7 +1215,7 @@ a:hover {
   justify-content: space-evenly;
   padding-inline: 10%;
 }
-.aurorae--information--synopsis {
+.information--synopsis {
   display: grid;
   grid-template-columns: 0.1fr 1fr;
   grid-template-rows: 0.4fr 0.8fr;
@@ -1223,19 +1224,19 @@ a:hover {
   align-self: flex-start;
   width: 35vw;
 }
-.aurorae--information--synopsis h4 {
+.information--synopsis h4 {
   grid-area: 1/2/2/3;
 }
-.aurorae--information--synopsis p {
+.information--synopsis p {
   grid-area: 2/2/3/3;
 }
-.aurorae--information--synopsis--border {
+.information--synopsis--border {
   border-left: 5px solid var(--carbon);
   grid-area: 1/1/3/2;
   height: 150%;
   align-self: center;
 }
-.aurorae--information--role {
+.information--role {
   align-self: flex-end;
   width: 35vw;
   text-align: right;
@@ -1245,20 +1246,20 @@ a:hover {
   grid-column-gap: 0px;
   grid-row-gap: 25px;
 }
-.aurorae--information--role h4 {
+.information--role h4 {
   grid-area: 1/1/2/2;
 }
-.aurorae--information--role p {
+.information--role p {
   grid-area: 2/1/3/2;
 }
-.aurorae--information--role--border {
+.information--role--border {
   border-right: 5px solid var(--carbon);
   height: 150%;
   align-self: center;
   justify-self: flex-end;
   grid-area: 1/2/3/3;
 }
-.aurorae--information--credits {
+.information--credits {
   align-self: flex-start;
   width: 35vw;
   display: grid;
@@ -1267,19 +1268,20 @@ a:hover {
   grid-column-gap: 0px;
   grid-row-gap: 25px;
 }
-.aurorae--information--credits h4 {
+.information--credits h4 {
   grid-area: 1/2/2/3;
 }
-.aurorae--information--credits ul {
+.information--credits ul {
   grid-area: 2/2/3/3;
 }
-.aurorae--information--credits--border {
+.information--credits--border {
   border-left: 5px solid var(--carbon);
   grid-area: 1/1/3/2;
   height: 150%;
   align-self: center;
 }
-.aurorae--preprod {
+
+.preprod {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -1287,19 +1289,19 @@ a:hover {
   align-items: center;
   justify-content: space-around;
 }
-.aurorae--preprod--border {
+.preprod--border {
   width: 60vw;
   border-top: 5px solid var(--carbon);
   align-self: flex-start;
   margin-left: -25%;
 }
-.aurorae--preprod img {
+.preprod img {
   border: var(--smoky) solid 2px;
 }
-.aurorae--preprod h2 {
+.preprod h2 {
   align-self: start;
 }
-.aurorae--preprod--gallery {
+.preprod--gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr) 0.2fr;
@@ -1309,52 +1311,285 @@ a:hover {
   height: 70vh;
   align-items: center;
 }
-.aurorae--preprod--gallery--pic1 {
+.preprod--gallery--pic1 {
   grid-area: 1/1/2/2;
   width: 100%;
 }
-.aurorae--preprod--gallery--pic2 {
+.preprod--gallery--pic2 {
   grid-area: 1/2/2/3;
   width: 100%;
 }
-.aurorae--preprod--gallery--pic3 {
+.preprod--gallery--pic3 {
   grid-area: 1/3/2/4;
   width: 100%;
 }
-.aurorae--preprod--gallery--pic4 {
+.preprod--gallery--pic4 {
   grid-area: 2/1/3/2;
   width: 100%;
 }
-.aurorae--preprod--gallery--pic5 {
+.preprod--gallery--pic5 {
   grid-area: 2/2/3/3;
   width: 100%;
 }
-.aurorae--preprod--gallery--pic6 {
+.preprod--gallery--pic6 {
   grid-area: 2/3/3/4;
   width: 100%;
 }
-.aurorae--preprod--gallery--btn {
+.preprod--gallery--btn {
   grid-area: 3/3/4/4;
   align-self: flex-start;
   justify-self: flex-end;
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1480px) {
-  .aurorae--presents--title {
+@media screen and (min-width: 1680px) {
+  .presents {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .presents--title {
+    font-size: 180px;
+    color: var(--olive);
+  }
+  .presents--subtitle {
+    align-self: flex-end;
+    margin-right: 25%;
+    margin-bottom: 3%;
+  }
+  .presents--video {
+    width: 55vw;
+    height: 60vh;
+    background-color: aqua;
+  }
+  .information {
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-inline: 10%;
+  }
+  .information--synopsis {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    grid-template-rows: 0.4fr 0.8fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 25px;
+    align-self: flex-start;
+    width: 35vw;
+  }
+  .information--synopsis h4 {
+    grid-area: 1/2/2/3;
+  }
+  .information--synopsis p {
+    grid-area: 2/2/3/3;
+  }
+  .information--synopsis--border {
+    border-left: 5px solid var(--carbon);
+    grid-area: 1/1/3/2;
+    height: 150%;
+    align-self: center;
+  }
+  .information--role {
+    align-self: flex-end;
+    width: 35vw;
+    text-align: right;
+    display: grid;
+    grid-template-columns: 1fr 0.1fr;
+    grid-template-rows: 0.4fr 0.8fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 25px;
+  }
+  .information--role h4 {
+    grid-area: 1/1/2/2;
+  }
+  .information--role p {
+    grid-area: 2/1/3/2;
+  }
+  .information--role--border {
+    border-right: 5px solid var(--carbon);
+    height: 150%;
+    align-self: center;
+    justify-self: flex-end;
+    grid-area: 1/2/3/3;
+  }
+  .information--credits {
+    align-self: flex-start;
+    width: 35vw;
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    grid-template-rows: 0.4fr 0.8fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 25px;
+  }
+  .information--credits h4 {
+    grid-area: 1/2/2/3;
+  }
+  .information--credits ul {
+    grid-area: 2/2/3/3;
+  }
+  .information--credits--border {
+    border-left: 5px solid var(--carbon);
+    grid-area: 1/1/3/2;
+    height: 150%;
+    align-self: center;
+  }
+  .preprod {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .preprod--border {
+    width: 60vw;
+    border-top: 5px solid var(--carbon);
+    align-self: flex-start;
+    margin-left: -25%;
+  }
+  .preprod img {
+    border: var(--smoky) solid 2px;
+  }
+  .preprod h2 {
+    align-self: start;
+  }
+  .preprod--gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr) 0.2fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    width: 75vw;
+    height: 70vh;
+    align-items: center;
+  }
+  .preprod--gallery--pic1 {
+    grid-area: 1/1/2/2;
+    width: 100%;
+  }
+  .preprod--gallery--pic2 {
+    grid-area: 1/2/2/3;
+    width: 100%;
+  }
+  .preprod--gallery--pic3 {
+    grid-area: 1/3/2/4;
+    width: 100%;
+  }
+  .preprod--gallery--pic4 {
+    grid-area: 2/1/3/2;
+    width: 100%;
+  }
+  .preprod--gallery--pic5 {
+    grid-area: 2/2/3/3;
+    width: 100%;
+  }
+  .preprod--gallery--pic6 {
+    grid-area: 2/3/3/4;
+    width: 100%;
+  }
+  .preprod--gallery--btn {
+    grid-area: 3/3/4/4;
+    align-self: flex-start;
+    justify-self: flex-end;
+  }
+}
+@media screen and (min-width: 1480px) and (max-width: 1680px) {
+  .presents--title {
     font-size: 120px;
   }
-  .aurorae--presents--subtitle {
+  .presents--subtitle {
     font-size: 40px;
     margin-right: 15%;
   }
-  .aurorae--presents--video {
-    height: 50vh;
+  .presents--video {
+    height: 60vh;
+    width: 75vw;
   }
-  .aurorae--information {
+  .information {
     padding-inline: 6%;
     height: 300vh;
   }
-  .aurorae--preprod {
+  .preprod {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .preprod--border {
+    width: 60vw;
+    border-top: 5px solid var(--carbon);
+    align-self: flex-start;
+    margin-left: -25%;
+  }
+  .preprod img {
+    border: var(--smoky) solid 2px;
+  }
+  .preprod h2 {
+    align-self: start;
+  }
+  .preprod--gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr) 0.2fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    width: 75vw;
+    height: 70vh;
+    align-items: center;
+  }
+  .preprod--gallery--pic1 {
+    grid-area: 1/1/2/2;
+    width: 100%;
+  }
+  .preprod--gallery--pic2 {
+    grid-area: 1/2/2/3;
+    width: 100%;
+  }
+  .preprod--gallery--pic3 {
+    grid-area: 1/3/2/4;
+    width: 100%;
+  }
+  .preprod--gallery--pic4 {
+    grid-area: 2/1/3/2;
+    width: 100%;
+  }
+  .preprod--gallery--pic5 {
+    grid-area: 2/2/3/3;
+    width: 100%;
+  }
+  .preprod--gallery--pic6 {
+    grid-area: 2/3/3/4;
+    width: 100%;
+  }
+  .preprod--gallery--btn {
+    grid-area: 3/3/4/4;
+    align-self: flex-start;
+    justify-self: flex-end;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1480px) {
+  .presents--title {
+    font-size: 120px;
+  }
+  .presents--subtitle {
+    font-size: 40px;
+    margin-right: 15%;
+  }
+  .presents--video {
+    height: 50vh;
+  }
+  .information {
+    padding-inline: 6%;
+    height: 300vh;
+  }
+  .preprod {
     width: 100%;
     height: 140vh;
     display: flex;
@@ -1362,16 +1597,16 @@ a:hover {
     align-items: center;
     justify-content: space-around;
   }
-  .aurorae--preprod--border {
+  .preprod--border {
     width: 60vw;
     border-top: 5px solid var(--carbon);
     align-self: flex-start;
     margin-left: -15%;
   }
-  .aurorae--preprod h2 {
+  .preprod h2 {
     font-size: 50px;
   }
-  .aurorae--preprod--gallery {
+  .preprod--gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -1379,51 +1614,51 @@ a:hover {
     grid-row-gap: 15px;
     height: 100vh;
   }
-  .aurorae--preprod--gallery--pic1 {
+  .preprod--gallery--pic1 {
     grid-area: 1/1/2/2;
   }
-  .aurorae--preprod--gallery--pic2 {
+  .preprod--gallery--pic2 {
     grid-area: 1/2/2/3;
   }
-  .aurorae--preprod--gallery--pic3 {
+  .preprod--gallery--pic3 {
     grid-area: 2/1/3/2;
   }
-  .aurorae--preprod--gallery--pic4 {
+  .preprod--gallery--pic4 {
     grid-area: 2/2/3/3;
   }
-  .aurorae--preprod--gallery--pic5 {
+  .preprod--gallery--pic5 {
     grid-area: 3/1/4/2;
   }
-  .aurorae--preprod--gallery--pic6 {
+  .preprod--gallery--pic6 {
     grid-area: 3/2/4/3;
   }
-  .aurorae--preprod--gallery--btn {
+  .preprod--gallery--btn {
     grid-area: 4/2/5/3;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
-  .aurorae--presents--title {
+  .presents--title {
     font-size: 90px;
   }
-  .aurorae--presents--subtitle {
+  .presents--subtitle {
     font-size: 30px;
     margin-right: 15%;
   }
-  .aurorae--presents--video {
+  .presents--video {
     width: 60vw;
     height: 58vh;
   }
-  .aurorae--information {
+  .information {
     padding-inline: 6%;
     height: 300vh;
   }
-  .aurorae--information p {
+  .information p {
     font-size: 15px;
   }
-  .aurorae--information h3 {
+  .information h3 {
     font-size: 45px;
   }
-  .aurorae--preprod {
+  .preprod {
     width: 100%;
     height: 140vh;
     display: flex;
@@ -1431,16 +1666,16 @@ a:hover {
     align-items: center;
     justify-content: space-around;
   }
-  .aurorae--preprod--border {
+  .preprod--border {
     width: 60vw;
     border-top: 5px solid var(--carbon);
     align-self: flex-start;
     margin-left: -15%;
   }
-  .aurorae--preprod h2 {
+  .preprod h2 {
     font-size: 50px;
   }
-  .aurorae--preprod--gallery {
+  .preprod--gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -1448,71 +1683,214 @@ a:hover {
     grid-row-gap: 15px;
     height: 110vh;
   }
-  .aurorae--preprod--gallery--pic1 {
+  .preprod--gallery--pic1 {
     grid-area: 1/1/2/2;
   }
-  .aurorae--preprod--gallery--pic2 {
+  .preprod--gallery--pic2 {
     grid-area: 1/2/2/3;
   }
-  .aurorae--preprod--gallery--pic3 {
+  .preprod--gallery--pic3 {
     grid-area: 2/1/3/2;
   }
-  .aurorae--preprod--gallery--pic4 {
+  .preprod--gallery--pic4 {
     grid-area: 2/2/3/3;
   }
-  .aurorae--preprod--gallery--pic5 {
+  .preprod--gallery--pic5 {
     grid-area: 3/1/4/2;
   }
-  .aurorae--preprod--gallery--pic6 {
+  .preprod--gallery--pic6 {
     grid-area: 3/2/4/3;
   }
-  .aurorae--preprod--gallery--btn {
+  .preprod--gallery--btn {
     grid-area: 4/2/5/3;
   }
 }
-@media screen and (min-width: 375px) and (max-width: 570px) {
-  .aurorae--presents--title {
-    font-size: 50px;
+@media screen and (min-width: 975px) and (max-width: 1024px) {
+  .presents--title {
+    font-size: 90px;
   }
-  .aurorae--presents--subtitle {
-    font-size: 18px;
-    margin: 0;
-    align-self: center;
+  .presents--subtitle {
+    font-size: 30px;
+    margin-right: 7%;
   }
-  .aurorae--presents--video {
-    width: 65vw;
-    height: 20vh;
+  .presents--video {
+    width: 85vw;
+    height: 38vh;
   }
-  .aurorae--information {
+  .information {
     padding-inline: 6%;
     height: 300vh;
   }
-  .aurorae--information--synopsis, .aurorae--information--role, .aurorae--information--credits {
-    grid-column-gap: 20px;
-    width: 65vw;
+  .information p {
+    font-size: 16px;
   }
-  .aurorae--information p {
-    font-size: 10px;
+  .information h3 {
+    font-size: 35px;
   }
-  .aurorae--information h3 {
-    font-size: 25px;
+  .information--synopsis, .information--role, .information--credits {
+    width: 55vw;
   }
-  .aurorae--preprod {
+  .preprod {
     width: 100%;
-    height: 200vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
-  .aurorae--preprod--border {
-    border-top: 3px solid var(--carbon);
-    width: 120%;
+  .preprod--border {
+    width: 60vw;
+    border-top: 5px solid var(--carbon);
+    align-self: flex-start;
+    margin-left: -15%;
   }
-  .aurorae--preprod h2 {
+  .preprod h2 {
+    font-size: 50px;
+  }
+  .preprod--gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    height: 100vh;
+  }
+  .preprod--gallery--pic1 {
+    grid-area: 1/1/2/2;
+  }
+  .preprod--gallery--pic2 {
+    grid-area: 1/2/2/3;
+  }
+  .preprod--gallery--pic3 {
+    grid-area: 2/1/3/2;
+  }
+  .preprod--gallery--pic4 {
+    grid-area: 2/2/3/3;
+  }
+  .preprod--gallery--pic5 {
+    grid-area: 3/1/4/2;
+  }
+  .preprod--gallery--pic6 {
+    grid-area: 3/2/4/3;
+  }
+  .preprod--gallery--btn {
+    grid-area: 4/2/5/3;
+  }
+}
+@media screen and (min-width: 775px) and (max-width: 975px) {
+  .presents--title {
+    font-size: 90px;
+  }
+  .presents--subtitle {
     font-size: 30px;
+    margin-right: 7%;
   }
-  .aurorae--preprod--gallery {
+  .presents--video {
+    width: 85vw;
+    height: 38vh;
+  }
+  .information {
+    padding-inline: 6%;
+    height: 300vh;
+  }
+  .information p {
+    font-size: 16px;
+  }
+  .information h3 {
+    font-size: 35px;
+  }
+  .information--synopsis, .information--role, .information--credits {
+    width: 55vw;
+  }
+  .preprod {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .preprod--border {
+    width: 60vw;
+    border-top: 5px solid var(--carbon);
+    align-self: flex-start;
+    margin-left: -15%;
+  }
+  .preprod h2 {
+    font-size: 50px;
+  }
+  .preprod--gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    height: 100vh;
+  }
+  .preprod--gallery--pic1 {
+    grid-area: 1/1/2/2;
+  }
+  .preprod--gallery--pic2 {
+    grid-area: 1/2/2/3;
+  }
+  .preprod--gallery--pic3 {
+    grid-area: 2/1/3/2;
+  }
+  .preprod--gallery--pic4 {
+    grid-area: 2/2/3/3;
+  }
+  .preprod--gallery--pic5 {
+    grid-area: 3/1/4/2;
+  }
+  .preprod--gallery--pic6 {
+    grid-area: 3/2/4/3;
+  }
+  .preprod--gallery--btn {
+    grid-area: 4/2/5/3;
+  }
+}
+@media screen and (min-width: 615px) and (max-width: 775px) {
+  .presents--title {
+    font-size: 90px;
+  }
+  .presents--subtitle {
+    font-size: 30px;
+    margin-right: 7%;
+  }
+  .presents--video {
+    width: 85vw;
+    height: 30vh;
+  }
+  .information {
+    padding-inline: 6%;
+    height: 300vh;
+  }
+  .information p {
+    font-size: 16px;
+  }
+  .information h3 {
+    font-size: 35px;
+  }
+  .information--synopsis, .information--role, .information--credits {
+    width: 55vw;
+  }
+  .preprod {
+    width: 100%;
+    height: 145vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .preprod--border {
+    border-top: 3px solid var(--carbon);
+    width: 100%;
+  }
+  .preprod h2 {
+    font-size: 30px;
+    margin-block: 3% 5%;
+  }
+  .preprod--gallery {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(7, 1fr);
@@ -1520,57 +1898,60 @@ a:hover {
     grid-row-gap: 15px;
     height: 160vh;
   }
-  .aurorae--preprod--gallery--pic1 {
+  .preprod--gallery--pic1 {
     grid-area: 1/1/2/2;
   }
-  .aurorae--preprod--gallery--pic2 {
+  .preprod--gallery--pic2 {
     grid-area: 2/1/3/2;
   }
-  .aurorae--preprod--gallery--pic3 {
+  .preprod--gallery--pic3 {
     grid-area: 3/1/4/2;
   }
-  .aurorae--preprod--gallery--pic4 {
+  .preprod--gallery--pic4 {
     grid-area: 4/1/5/2;
   }
-  .aurorae--preprod--gallery--pic5 {
+  .preprod--gallery--pic5 {
     grid-area: 5/1/6/2;
   }
-  .aurorae--preprod--gallery--pic6 {
+  .preprod--gallery--pic6 {
     grid-area: 6/1/7/2;
   }
-  .aurorae--preprod--gallery--btn {
+  .preprod--gallery--btn {
     grid-area: 7/1/8/2;
     width: 100%;
   }
 }
-@media screen and (max-width: 375px) {
-  .aurorae--presents--title {
-    font-size: 35px;
+@media screen and (min-width: 570px) and (max-width: 615px) {
+  .presents {
+    justify-self: center;
   }
-  .aurorae--presents--subtitle {
-    font-size: 14px;
-    margin: 0 0 5% 0;
+  .presents--title {
+    font-size: 50px;
+  }
+  .presents--subtitle {
+    font-size: 18px;
+    margin: 0;
     align-self: center;
   }
-  .aurorae--presents--video {
+  .presents--video {
     width: 65vw;
     height: 20vh;
   }
-  .aurorae--information {
+  .information {
     padding-inline: 6%;
     height: 300vh;
   }
-  .aurorae--information--synopsis, .aurorae--information--role, .aurorae--information--credits {
+  .information--synopsis, .information--role, .information--credits {
     grid-column-gap: 20px;
     width: 65vw;
   }
-  .aurorae--information p {
+  .information p {
     font-size: 10px;
   }
-  .aurorae--information h3 {
+  .information h3 {
     font-size: 25px;
   }
-  .aurorae--preprod {
+  .preprod {
     width: 100%;
     height: 200vh;
     display: flex;
@@ -1578,14 +1959,14 @@ a:hover {
     align-items: center;
     justify-content: space-around;
   }
-  .aurorae--preprod--border {
+  .preprod--border {
     border-top: 3px solid var(--carbon);
     width: 120%;
   }
-  .aurorae--preprod h2 {
+  .preprod h2 {
     font-size: 30px;
   }
-  .aurorae--preprod--gallery {
+  .preprod--gallery {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(7, 1fr);
@@ -1593,25 +1974,201 @@ a:hover {
     grid-row-gap: 15px;
     height: 160vh;
   }
-  .aurorae--preprod--gallery--pic1 {
+  .preprod--gallery--pic1 {
     grid-area: 1/1/2/2;
   }
-  .aurorae--preprod--gallery--pic2 {
+  .preprod--gallery--pic2 {
     grid-area: 2/1/3/2;
   }
-  .aurorae--preprod--gallery--pic3 {
+  .preprod--gallery--pic3 {
     grid-area: 3/1/4/2;
   }
-  .aurorae--preprod--gallery--pic4 {
+  .preprod--gallery--pic4 {
     grid-area: 4/1/5/2;
   }
-  .aurorae--preprod--gallery--pic5 {
+  .preprod--gallery--pic5 {
     grid-area: 5/1/6/2;
   }
-  .aurorae--preprod--gallery--pic6 {
+  .preprod--gallery--pic6 {
     grid-area: 6/1/7/2;
   }
-  .aurorae--preprod--gallery--btn {
+  .preprod--gallery--btn {
+    grid-area: 7/1/8/2;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 570px) {
+  .presents {
+    justify-self: center;
+  }
+  .presents--title {
+    font-size: 50px;
+  }
+  .presents--subtitle {
+    font-size: 18px;
+    margin: 0;
+    align-self: center;
+  }
+  .presents--video {
+    width: 65vw;
+    height: 20vh;
+  }
+  /*
+      .information {
+
+          &--synopsis,
+          &--role,
+          &--credits {
+              grid-column-gap: 20px;
+              width: 65vw;
+          }
+
+          padding-inline: 6%;
+          height: 300vh;
+
+          & p {
+              font-size: 10px;
+          }
+
+          & h3 {
+              font-size: 25px;
+          }
+
+
+      }
+
+      .preprod {
+          width: 100%;
+          height: 200vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+
+          &--border {
+              border-top: 3px solid var(--carbon);
+              width: 120%;
+          }
+
+
+          & h2 {
+              font-size: 30px;
+          }
+
+
+          &--gallery {
+
+              display: grid;
+              grid-template-columns: 1fr;
+              grid-template-rows: repeat(7, 1fr);
+              grid-column-gap: 0px;
+              grid-row-gap: 15px;
+              height: 160vh;
+
+              &--pic1 {
+                  grid-area: 1 / 1 / 2 / 2;
+              }
+
+              &--pic2 {
+                  grid-area: 2 / 1 / 3 / 2;
+              }
+
+              &--pic3 {
+                  grid-area: 3 / 1 / 4 / 2;
+              }
+
+              &--pic4 {
+                  grid-area: 4 / 1 / 5 / 2;
+              }
+
+              &--pic5 {
+                  grid-area: 5 / 1 / 6 / 2;
+              }
+
+              &--pic6 {
+                  grid-area: 6 / 1 / 7 / 2;
+              }
+
+              &--btn {
+                  grid-area: 7 / 1 / 8 / 2;
+                  width: 100%;
+              }
+
+          }
+
+
+      }
+  }*/
+}
+@media screen and (max-width: 375px) {
+  .presents--title {
+    font-size: 35px;
+  }
+  .presents--subtitle {
+    font-size: 14px;
+    margin: 0 0 5% 0;
+    align-self: center;
+  }
+  .presents--video {
+    width: 75vw;
+    height: 15vh;
+  }
+  .information {
+    padding-inline: 6%;
+    height: 300vh;
+  }
+  .information--synopsis, .information--role, .information--credits {
+    grid-column-gap: 20px;
+    width: 65vw;
+  }
+  .information p {
+    font-size: 10px;
+  }
+  .information h3 {
+    font-size: 25px;
+  }
+  .preprod {
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .preprod--border {
+    border-top: 3px solid var(--carbon);
+    width: 120%;
+  }
+  .preprod h2 {
+    font-size: 30px;
+  }
+  .preprod--gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 15px;
+    height: 160vh;
+  }
+  .preprod--gallery--pic1 {
+    grid-area: 1/1/2/2;
+  }
+  .preprod--gallery--pic2 {
+    grid-area: 2/1/3/2;
+  }
+  .preprod--gallery--pic3 {
+    grid-area: 3/1/4/2;
+  }
+  .preprod--gallery--pic4 {
+    grid-area: 4/1/5/2;
+  }
+  .preprod--gallery--pic5 {
+    grid-area: 5/1/6/2;
+  }
+  .preprod--gallery--pic6 {
+    grid-area: 6/1/7/2;
+  }
+  .preprod--gallery--btn {
     grid-area: 7/1/8/2;
     width: 100%;
   }
