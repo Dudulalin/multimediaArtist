@@ -10,7 +10,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/about.css">
     <title>Sitmonternna Yi</title>
 </head>
 
@@ -18,25 +19,29 @@
 
     <!-- Burger Icon -->
 
-    <header class="navigation">
-        <h1 class="logo">Sitmonternna yi</h1>
-        <div class="burger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+    <nav class="navbar">
+        <div class="header-logo">Sitmonternna Yi</div>
+        <div class="big-menu" class="big-menu">
+          <a>About</a>
+          <a>Service</a>
+          <a>Projects</a>
+          <a>Contact</a>
         </div>
-
-        <!-- Fullscreen Navigation -->
-        <div class="nav-menu">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <div class="burger-menu" id="burger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
         </div>
-    </header>
+      </nav>
+      
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">À propos</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
 
+<!--
     <section class="about">
         <div class="about--content">
             <img class="about--content--img--big" src="./media/me/me.jpg" alt="img">
@@ -219,6 +224,8 @@
         
         </div>
     </footer>
+    
+    -->
     <script src="./main.js"></script>
 </body>
 

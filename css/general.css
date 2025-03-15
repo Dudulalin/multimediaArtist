@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*color palet*/
+:root {
+    --beige: #FFFAF4;
+    --grey: #595959;
+    --green: #565448;
+    --smoke: #11120D;
+}
+
+/*back color*/
+body {
+    background-color: var(--beige);
+}
+
+/*font*/
+
+h1 {
+    font-family: Playfair Display;
+    font-size: 150px;
+}
+
+h2 {
+    font-size: 80px;
+    font-family: Montserrat;
+}
+
+h3 {
+    font-size: 65px;
+    font-family: Montserrat;
+}
+
+h4 {
+    font-size: 32px;
+    font-family: Montserrat;
+}
+
+p {
+    font-size: 20px;
+    font-family: Montserrat;
+}
+
+a {
+    font-family: Montserrat;
+    color: var(--smoke);
+}
+
+.header-logo {
+    font-family: Playfair Display;
+    font-size: 30px;
+    color: var(--grey);
+}
+
+footer-logo {
+    font-size: 40px;
+}
+
+/*navbar*/
+
+.big-menu a {
+    padding-right: 5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #FFFAF4;
+    border-bottom: 2px solid var(--grey);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Menu Full-Screen */
+.nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    transform: translateY(-100%);
+    transition: transform 0.8s ease-in-out;
+}
+
+.nav-links.active {
+    transform: translateX(0);
+}
+
+.nav-links li {
+    text-align: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+/* Burger Menu */
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.burger-menu .bar {
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.burger-menu .bar:nth-child(2) {
+    width: 20px;
+    height: 2px;
+}
+
+/* Animation de l'icône Burger en X */
+.burger-menu.active .bar:nth-child(1) {
+    transform: translateY(15px) rotate(40deg);
+}
+
+.burger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-40deg);
+}
+
+/* Cacher le menu sur grand écran */
+@media screen and (min-width: 500px) {
+    .burger-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .big-menu {
+        display: none;
+    }
+}

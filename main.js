@@ -21,11 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
- // Toggle the menu
- const burgerMenu = document.querySelector('.burger-menu');
- const navMenu = document.querySelector('.nav-menu');
+const burgerMenu = document.getElementById("burger-menu");
+const navLinks = document.getElementById("nav-links");
 
- burgerMenu.addEventListener('click', () => {
-     burgerMenu.classList.toggle('open');
-     navMenu.classList.toggle('open');
- });
+burgerMenu.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    burgerMenu.classList.toggle("active");
+});
