@@ -7,6 +7,7 @@
 /*color palet*/
 :root {
     --beige: #FFFAF4;
+    --light-grey: #e0e0e0;
     --grey: #595959;
     --green: #565448;
     --smoke: #11120D;
@@ -22,6 +23,7 @@ body {
 h1 {
     font-family: Playfair Display;
     font-size: 100px;
+    font-weight: 400;
     text-transform: uppercase;
 }
 

@@ -28,3 +28,29 @@ burgerMenu.addEventListener("click", () => {
     navLinks.classList.toggle("active");
     burgerMenu.classList.toggle("active");
 });
+
+//--------------------------------projet filter-----------------------------------
+
+const filters = document.querySelectorAll('.filter');
+const projects = document.querySelectorAll('.projet');
+
+filters.forEach(filter => {
+  filter.addEventListener('click', () => {
+    // Toggle active class
+    filters.forEach(f => f.classList.remove('active'));
+    filter.classList.add('active');
+
+    const filterValue = filter.getAttribute('data-filter');
+
+    projects.forEach(project => {
+      if (filterValue === 'all' || project.classList.contains(filterValue)) {
+        project.style.display = 'block';
+      } else {
+        project.style.display = 'none';
+      }
+    });
+  });
+});
+
+// Show all projects by default
+document.querySelector('.filter[data-filter="all"]').click();

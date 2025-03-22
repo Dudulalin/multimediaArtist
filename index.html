@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/projects.css">
+    <link rel="stylesheet" href="./css/rappel.css">
     <title>Sitmonternna Yi</title>
 </head>
 
@@ -93,7 +94,18 @@
 
 
     <section class="projects">
-        <div class="aurorae">
+
+        <div class="navigation">
+            <h1 class="title">projets</h1>
+            <div class="filters">
+                <h4 class="filter active" data-filter="all">tout</h4>
+                <h4 class="filter" data-filter="design">design</h4>
+                <h4 class="filter" data-filter="video">production video</h4>
+                <h4 class="filter" data-filter="interactive">intéractivité</h4>
+            </div>
+        </div>
+
+        <div class=" projet aurorae video">
             <div class="projet-grid">
                 <img class="img-big" src="./media/projects/thumbnail/aurorae-big.jpg" alt="">
                 <h2 class="project-title">Aurorae</h2>
@@ -121,106 +133,59 @@
             </div>
 
         </div>
-        
-        <div class="confort">
+
+        <div class=" projet confort video">
             <div class="projet-grid">
                 <img class="img-big" src="./media/projects/thumbnail/confort-big.jpg" alt="">
                 <h2 class="project-title">confort dore</h2>
-                <img class="img-small" src="./media/projects/thumbnail/confort-small.jpg"
-                    alt="">
-                    <div class="more-info">
-                <h3 class="subtitle">Technique</h3>
-                <p class="extrainfo">
-                    Prise de vidéos macro, conception et montage vidéo avec Davinci resolve et montage sonore avec
-                    Repear.
-                </p></div>
+                <img class="img-small" src="./media/projects/thumbnail/confort-small.jpg" alt="">
+                <div class="more-info">
+                    <h3 class="subtitle">Technique</h3>
+                    <p class="extrainfo">
+                        Prise de vidéos macro, conception et montage vidéo avec Davinci resolve et montage sonore avec
+                        Repear.
+                    </p>
+                </div>
                 <p class="worktype">Hivers 2023 <br> projet scolaire</p>
                 <p class="description">
                     Ce projet vidéo met en valeur l’atmosphère chaleureuse et accueillante d’un café, en soulignant
                     l’ambiance intime et relaxante du lieu. À travers un montage soigné, il présente les produits et
                     l’environnement, offrant une invitation à ceux en quête d’un lieu de confort.
                 </p>
-                <button class="btn-more square-button" onclick="window.location.href='./project_pages/confort.html';">en <br> savoir <br> plus</button>
+                <button class="btn-more square-button" onclick="window.location.href='./project_pages/confort.html';">en
+                    <br> savoir <br> plus</button>
                 <p class="classification"> PRODUCTION VIDEO & SONORE</p>
             </div>
         </div>
 
-        <div class="chaos">
-            <div class="projet-grid">
-                <img class="img-big" src="./media/projects/thumbnail/chaos_big.jpg" alt="">
-                <h2 class="project-title">chaos</h2>
-                <img class="img-small" src="./media/projects/thumbnail/chaos_small.jpg" alt="">
-                <div class="more-info">
-                    <h3 class="subtitle">Title 1</h3>
-                    <p class="extrainfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do </p>
-                </div>
-                <p class="worktype">2024 <br> projet scolaire</p>
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.</p>
-                <button class="btn-more square-button" onclick="window.location.href='./project_pages/chaos.html';">en
-                    <br> savoir <br> plus</button>
-                <p class="classification"> Animation 3d & montage video</p>
-            </div>
-
-        </div>
 
     </section>
+
+    <section class="rappel">
+        <div class="bordure"></div>
+        <h1>allo !</h1>
+        <h2>interesser par mon portfolio ?
+        </h2>
+        <h2>
+            contacter moi
+        </h2>    
+            
+        
+        <div class="apps"></div>
+    </section>
+
 
     <!--
-    <section class="services">
-        <div class="services--border"></div>
-        <div class="services--container">
-            <h2 class="services--container--title">Services</h2>
-
-            <div class="services--container--content">
-                <div class="services--container--content--card--01 card">
-                    <h3 class="services--container--content--card--01--title card--title">production <br> video</h3>
-                    <div class="services--container--content--card--01--app">
-                        <img class="services--container--content--card--01--app--01" src="./media/app/davinci.svg" alt="">
-                        <img class="services--container--content--card--01--app--02" src="./media/app/repear.svg" alt="">
-                    </div>
-                </div>
-
-                <div class="services--container--content--card--02 card">
-                    <h3 class="services--container--content--card--02--title card--title">design <br> graphic</h3>
-                    <div class="services--container--content--card--02--app">
-                        <img class="services--container--content--card--02--app--01" src="./media/app/figma.svg" alt="">
-                        <img class="services--container--content--card--02--app--02" src="./media/app/adobe.svg" alt="">
-                    </div>
-
-                </div>
-
-                <div class="services--container--content--card--03 card">
-                    <h3 class="services--container--content--card--03--title card--title">art <br> interactive</h3>
-                    <div class="services--container--content--card--03--app">
-                        <img class="services--container--content--card--03--app--01" src="./media/app/touchdesigner.svg" alt="">
-                        <img class="services--container--content--card--03--app--02" src="./media/app/arduino.svg" alt="">
-                    </div>
-                </div>
-
-                <div class="services--container--content--card--04 card">
-                    <h3 class="services--container--content--card--04--title card--title">modelisation <br> 3d</h3>
-                    <div class="services--container--content--card--04--app">
-                        <img class="services--container--content--card--04--app--01" src="./media/app/maya.svg" alt="">
-                        <img class="services--container--content--card--04--app--02" src="./media/app/unity.svg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <footer class="footer">
         <div class="footer--border"></div>
         <div class="footer--content">
             <h1 class="footer--content--logo logo">Sitmonternna Yi</h1>
             <div class="footer--content--occupation">
                 <h4 class="footer--content--occupation--01 ">designer graphique<h4>
-                <h4 class="footer--content--occupation--02 ">art interactive<h4>
-                <h4 class="footer--content--occupation--03 ">production<h4>
+                        <h4 class="footer--content--occupation--02 ">art interactive<h4>
+                                <h4 class="footer--content--occupation--03 ">production<h4>
             </div>
-            
+
             <div class="footer--content--app">
                 <a class="footer--content--app--mail" href="#">
                     <img class="app" src="./media/app/mail.svg" alt="app">
@@ -232,14 +197,14 @@
                     <img class="app" src="./media/app/be.svg" alt="app">
                 </a>
             </div>
-        
+
         </div>
-        
-        
+
+
         </div>
     </footer>
-    
-    -->
+-->
+
     <script src="./main.js"></script>
 </body>
 
