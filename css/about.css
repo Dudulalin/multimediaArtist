@@ -68,7 +68,7 @@ div.border {
     color: var(--grey);
 }
 
-.apps {
+.about .apps {
     grid-area: 4 / 2 / 5 / 3;
 }
 

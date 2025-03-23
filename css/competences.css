@@ -1,0 +1,76 @@
+.competences {
+    height: 200vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: flex-start;
+}
+
+.competences .border{
+    width: 65%;
+    height: 5px;
+    background-color: var(--green);
+    align-self: flex-start;
+}
+
+.competences-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr repeat(4, 0.7fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 15px;
+    width: 80%;
+}
+
+.competences-grid .block {
+    border-top: var(--light-grey) solid 2px;
+    padding-block: 5%;
+}
+
+.competences-grid .block h2 {
+    color: var(--green);
+    font-weight: 300;
+}
+
+.competences-grid .block .categories {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2%;
+}
+
+.competences-grid .block .categories h4 {
+
+    color: var(--grey);
+}
+
+.competences-grid .block .logiciels h4,
+.competences-grid .block .logiciels p {
+    color: var(--green);
+}
+
+.competences-grid h1 {
+    grid-area: 1 / 1 / 2 / 2;
+    color: var(--green);
+}
+
+.competences-grid p {
+    grid-area: 2 / 1 / 3 / 2;
+    width: 65%;
+}
+
+.design-grid {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.interactive-grid {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.video-grid {
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+.ui-grid {
+    grid-area: 6 / 1 / 7 / 2;
+}
