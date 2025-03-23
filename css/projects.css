@@ -1,5 +1,5 @@
 .projects {
-    height: 250vh;
+    height: 450vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -48,7 +48,9 @@
 }
 
 .aurorae,
-.confort {
+.confort,
+.internature,
+.deprime   {
     display: flex;
     width: 70vw;
     height: 100vh;
