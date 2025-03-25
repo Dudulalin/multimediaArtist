@@ -1,0 +1,155 @@
+body {
+    background-color: var(--beige);
+}
+
+/*presentation*/
+
+.presentation {
+    width: 100vw;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.present-box {
+    /*display: grid;
+    grid-template-columns: 1fr 0.3fr 0.5fr;
+    grid-template-rows: 0.1fr 0.1fr 1.5fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;*/
+    width: 90%;
+    height: 90%;
+}
+
+.titre {
+    grid-area: 1 / 1 / 2 / 3;
+    color: var(--green);
+}
+
+.sous-titre {
+    margin-top: 0;
+    grid-area: 2 / 2 / 3 / 4;
+    justify-self: flex-end;
+    color: var(--smoke);
+    padding-top: 0;
+}
+
+.video {
+    grid-area: 3 / 1 / 4 / 4;
+    width: 100%;
+    height: 60%;
+}
+
+/*information*/
+.information {
+    height: 150vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.info-box {
+    width: 90%;
+}
+
+.synopsis {
+    width: 40%;
+    border-left: 5px var(--green) solid;
+    padding-block: 1% 1%;
+    align-self: flex-start;
+    padding-left: 1%;
+    margin-block: 15%;
+}
+
+.role {
+    width: 40%;
+    border-right: 5px var(--green) solid;
+    padding-block: 1% 1%;
+    justify-self: flex-end;
+    padding-left: 1%;
+    margin-block: 15%;
+}
+
+.credits {
+    width: 40%;
+    border-left: 5px var(--green) solid;
+    padding-block: 1% 1%;
+    align-self: flex-start;
+    padding-left: 1%;
+    margin-block: 15%;
+}
+
+/*pre-production*/
+.preprod {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+
+}
+
+.preprod h2 {
+    align-self: flex-start;
+    justify-self: flex-start;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.4fr repeat(2, 1fr) 0.3fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    width: 80%;
+    height: 90%;
+
+}
+
+.gallery img {
+    width: 100%;
+    border: 1px var(--smoke) solid;
+}
+
+.pic1 {
+    grid-area: 2 / 1 / 3 / 2
+}
+
+.pic2 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.pic3 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.pic4 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.pic5 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.pic6 {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.more-btn {
+    grid-area: 4 / 3 / 5 / 4;
+    width: 50%;
+    height: 70%;
+    align-self: flex-start;
+    justify-self: flex-end;
+    border: 2px var(--green) solid;
+    background-color: transparent;
+    font-size: 25px;
+    color: var(--green);
+}

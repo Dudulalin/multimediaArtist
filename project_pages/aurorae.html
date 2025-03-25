@@ -10,99 +10,113 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/projet.css">
     <title>Sitmonternna Yi - Aurorae</title>
 </head>
 
 <body>
-    <header class="navigation">
-        <h1 class="logo">Sitmonternna yi</h1>
-        <div class="burger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+    <nav class="navbar">
+        <div class="header-logo">Sitmonternna Yi</div>
+        <div class="big-menu" id="nav-links">
+            <a href="#about">About</a>
+            <a href="#competences">Service</a>
+            <a href="#projects">Projects</a>
+            <a href="#rappel">Contact</a>
+        </div>
+        <div class="burger-menu" id="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <ul class="nav-links" id="nav-links">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">À propos</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="presentation">
+        <div class="present-box">
+
+            <h1 class="titre projet-titre">Aurorae</h1>
+            <h3 class="sous-titre">Court métrage</h3>
+
+            <iframe class="video" src="https://www.youtube.com/embed/qD21wO-teCk" allowfullscreen></iframe>
         </div>
 
-        <!-- Fullscreen Navigation -->
-        <div class="nav-menu">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </header>
-
-    <div class="presents">
-        <h1 class="presents--title">Aurorae</h1>
-        <h3 class="presents--subtitle">Court métrage</h3>
-
-        <iframe class="presents--video"  src="https://www.youtube.com/embed/qD21wO-teCk" allowfullscreen></iframe>
     </div>
 
     <div class="information">
-        <div class="information--synopsis">
-            <div class="information--synopsis--border"></div>
-            <h3>Synopsis</h3>
-            <p>Aurorae Luna est une démone âgée de 555 ans qui détient deux pouvoirs différents qui se contrastent.
-                C'est deux pouvoirs contrastants  lui fait souffrir mentalement. Elle apeure d'accepter ses deux côtés.
-                Cette peur l’emporte à se tuer et mourir.
-            </p>
+        <div class="info-box">
+
+            <div class="synopsis">
+                <h3>Synopsis</h3>
+                <p>Aurorae Luna est une démone âgée de 555 ans qui détient deux pouvoirs différents qui se contrastent.
+                    C'est deux pouvoirs contrastants  lui fait souffrir mentalement. Elle apeure d'accepter ses deux
+                    côtés.
+                    Cette peur l’emporte à se tuer et mourir.
+                </p>
+            </div>
+
+            <div class="role">
+                <h3>Mon rôle</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+            </div>
+
+            <div class="credits">
+                <h3>Crédits</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+            </div>
+
         </div>
 
-        <div class="information--role">
-            <div class="information--role--border"></div>
-            <h3>Mon rôle</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-        </div>
-
-        <div class="information--credits">
-            <div class="information--synopsis--border"></div>
-            <h3>Crédits</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-        </div>
 
         <div class="preprod">
-            <div class="preprod--border"></div>
-            <h2>Pré-Production</h2>
-            <div class="preprod--gallery">
-                <img class="preprod--gallery--pic1" src="../media/projects/aurorae/moodboard.jpg" alt="">
-                <img class="preprod--gallery--pic2" src="../media/projects/aurorae/realisation.jpg" alt="">
-                <img class="preprod--gallery--pic3" src="../media/projects/aurorae/photo.jpg" alt="">
-                <img class="preprod--gallery--pic4" src="../media/projects/aurorae/colorisation.jpg" alt="">
-                <img class="preprod--gallery--pic5" src="../media/projects/aurorae/projection.jpg" alt="">
-                <img class="preprod--gallery--pic6" src="../media/projects/aurorae/casting.jpg" alt="">
-                <button class=" preprod--gallery--btn long-btn">En savoir plus</button>
+            <div class="preprod-border"></div>
+
+            <div class="gallery">
+                <h2>Pré-Production</h2>
+                <img class="pic1" src="../media/projects/aurorae/moodboard.jpg" alt="">
+                <img class="pic2" src="../media/projects/aurorae/realisation.jpg" alt="">
+                <img class="pic3" src="../media/projects/aurorae/photo.jpg" alt="">
+                <img class="pic4" src="../media/projects/aurorae/colorisation.jpg" alt="">
+                <img class="pic5" src="../media/projects/aurorae/projection.jpg" alt="">
+                <img class="pic6" src="../media/projects/aurorae/casting.jpg" alt="">
+                <button class="more-btn long-btn">En savoir plus</button>
             </div>
         </div>
 
-        
+
     </div>
 
     <footer class="footer">
-        <div class="footer--border"></div>
-        <div class="footer--content">
-            <h1 class="footer--content--logo logo">Sitmonternna Yi</h1>
-            <div class="footer--content--occupation">
-                <h4 class="footer--content--occupation--01 ">designer graphique<h4>
-                        <h4 class="footer--content--occupation--02 ">art interactive<h4>
-                                <h4 class="footer--content--occupation--03 ">production<h4>
+        <div class="border"></div>
+        <div class="footer-grid">
+            <h1 class="footer-logo ">Sitmonternna Yi</h1>
+            <div class="footer-occupation">
+                <h4 class="occupation-01 ">designer graphique<h4>
+                        <h4 class="occupation-02 ">art interactive<h4>
+                                <h4 class="occupation-03 ">production<h4>
             </div>
 
-            <div class="footer--content--app">
-                <a class="footer--content--app--mail" href="#">
-                    <img class="app" src="../media/app/mail.svg" alt="app">
+            <div class="apps">
+                <a class="app" href="#">
+                    <img class="mail" src="./media/app/mail.svg" alt="app">
                 </a>
-                <a class="footer--content--app--ln" href="#">
-                    <img class="app" src="../media/app/ln.svg" alt="app">
+                <a class="app" href="#">
+                    <img class="ln" src="./media/app/ln.svg" alt="app">
                 </a>
-                <a class="footer--content--app--be" href="#">
-                    <img class="app" src="../media/app/be.svg" alt="app">
+                <a class="app" href="#">
+                    <img class="be" src="./media/app/be.svg" alt="app">
                 </a>
             </div>
 
@@ -112,7 +126,7 @@
         </div>
     </footer>
 
-    <script src="../main.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
