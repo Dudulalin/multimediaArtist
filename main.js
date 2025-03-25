@@ -33,24 +33,35 @@ burgerMenu.addEventListener("click", () => {
 
 const filters = document.querySelectorAll('.filter');
 const projects = document.querySelectorAll('.projet');
+const projectsSection = document.getElementById('projects');
 
 filters.forEach(filter => {
-  filter.addEventListener('click', () => {
-    // Toggle active class
-    filters.forEach(f => f.classList.remove('active'));
-    filter.classList.add('active');
+    filter.addEventListener('click', () => {
+        const filterValue = filter.getAttribute('data-filter');
 
-    const filterValue = filter.getAttribute('data-filter');
+        // Toggle active class
+        filters.forEach(f => f.classList.remove('active'));
+        filter.classList.add('active');
 
-    projects.forEach(project => {
-      if (filterValue === 'all' || project.classList.contains(filterValue)) {
-        project.style.display = 'block';
-      } else {
-        project.style.display = 'none';
-      }
+        // Filter projects
+        projects.forEach(proj => {
+            if (filterValue === 'all' || proj.classList.contains(filterValue)) {
+                proj.style.display = 'block';
+            } else {
+                proj.style.display = 'none';
+            }
+        });
+
+        // Count visible projects
+        const visibleProjects = Array.from(projects).filter(proj => proj.style.display === 'block').length;
+
+        // Adjust section height based on visible projects
+        projectsSection.style.height = `${visibleProjects * 100}vh`;
     });
-  });
 });
 
-// Show all projects by default
-document.querySelector('.filter[data-filter="all"]').click();
+// Trigger default filter to show all on load and set correct height
+window.addEventListener('load', () => {
+    document.querySelector('.filter[data-filter="all"]').click();
+});
+
