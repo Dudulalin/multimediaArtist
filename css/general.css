@@ -55,6 +55,7 @@ a {
     font-size: 20px;
     font-family: Montserrat;
     color: var(--smoke);
+    text-decoration: none;
 }
 
 

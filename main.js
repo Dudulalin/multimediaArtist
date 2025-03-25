@@ -9,10 +9,10 @@ btnCv.addEventListener("click", () => {
     window.open(pdfUrl, "_blank");
 });
 //-------------------------------------go up-----------------------------------
-const logo = document.querySelector("h1");
+const logo = document.querySelector(".header-logo");
 
 document.addEventListener("DOMContentLoaded", () => {
-    const logo = document.querySelector("h1");
+    const logo = document.querySelector(".header-logo");
     logo.addEventListener("click", () => {
         window.scrollTo({
             top: 0,
