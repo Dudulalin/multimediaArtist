@@ -59,19 +59,18 @@ a {
 }
 
 .sous-titre{
-    font-size: 80px;
+    font-size: 50px;
     font-family: Montserrat;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 5px;
 
 }
 .projet-titre{
     font-family: Playfair Display;
-    font-size: 200px;
+    font-size: 130px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 30px;
+
 }
 
 

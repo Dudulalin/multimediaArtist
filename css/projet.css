@@ -5,8 +5,9 @@ body {
 /*presentation*/
 
 .presentation {
+    margin-top: 2%;
     width: 100vw;
-    height: 150vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,76 +15,92 @@ body {
 }
 
 .present-box {
-    /*display: grid;
-    grid-template-columns: 1fr 0.3fr 0.5fr;
-    grid-template-rows: 0.1fr 0.1fr 1.5fr;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.1fr;
     grid-column-gap: 0px;
-    grid-row-gap: 0px;*/
+    grid-row-gap: 0px;
     width: 90%;
-    height: 90%;
+    height: 85%;
+}
+
+.nom {
+    grid-area: 2 / 3 / 3 / 4;
 }
 
 .titre {
-    grid-area: 1 / 1 / 2 / 3;
+
     color: var(--green);
+    justify-self: flex-end;
 }
 
 .sous-titre {
     margin-top: 0;
-    grid-area: 2 / 2 / 3 / 4;
     justify-self: flex-end;
     color: var(--smoke);
     padding-top: 0;
 }
 
 .video {
-    grid-area: 3 / 1 / 4 / 4;
+    grid-area: 1 / 1 / 2 / 4;
     width: 100%;
-    height: 60%;
+    height: 100%;
 }
 
 /*information*/
-.information {
-    height: 150vh;
-    width: 100vw;
+
+.info {
+    width: 100%;
+    height: 80vh;
     display: flex;
     flex-direction: column;
-    align-content: space-between;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .info-box {
+    height: 90%;
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+/*left*/
+.info .info-box .sub-left {
+    width: 35%;
+    text-align: justify;
+    padding-bottom: 1%;
 }
 
-.synopsis {
-    width: 40%;
-    border-left: 5px var(--green) solid;
-    padding-block: 1% 1%;
-    align-self: flex-start;
+.info .info-box .title-left {
+    padding-top: 1%;
+}
+
+.info .info-box .sub-left,
+.info .info-box .title-left {
+    border-left: 5px solid var(--green);
     padding-left: 1%;
-    margin-block: 15%;
 }
 
-.role {
-    width: 40%;
-    border-right: 5px var(--green) solid;
-    padding-block: 1% 1%;
-    justify-self: flex-end;
-    padding-left: 1%;
-    margin-block: 15%;
+/*right*/
+.info .info-box .sub-right {
+    width: 35%;
+    text-align: justify;
+    padding-bottom: 1%;
 }
 
-.credits {
-    width: 40%;
-    border-left: 5px var(--green) solid;
-    padding-block: 1% 1%;
-    align-self: flex-start;
-    padding-left: 1%;
-    margin-block: 15%;
+.info .info-box h3 {
+    padding-top: 1%;
 }
 
+.info .info-box .sub-right,
+.info .info-box .title-right {
+    border-right: 5px solid var(--green);
+    padding-right: 1%;
+    align-self: flex-end;
+}
 /*pre-production*/
 .preprod {
     height: 100vh;
@@ -105,10 +122,10 @@ body {
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.4fr repeat(2, 1fr) 0.3fr;
+    grid-template-rows: 0.4fr repeat(2, 1fr) 0.4fr;
     grid-column-gap: 50px;
     grid-row-gap: 50px;
-    width: 80%;
+    width: 90%;
     height: 90%;
 
 }
@@ -145,7 +162,7 @@ body {
 .more-btn {
     grid-area: 4 / 3 / 5 / 4;
     width: 50%;
-    height: 70%;
+    height: 100%;
     align-self: flex-start;
     justify-self: flex-end;
     border: 2px var(--green) solid;
