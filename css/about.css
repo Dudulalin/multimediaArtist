@@ -135,12 +135,21 @@ div.border {
         grid-area: 1 / 1 / 2 / 2;
     }
 
+    .name .title {
+        font-size: 32px;
+    }
+
+    .name .subtitle p {
+        margin-left: 1px;
+        font-size: 12px;
+    }
+
     .para {
         grid-area: 3 / 1 / 4 / 2;
     }
 
     .text {
-        width: 85%;
+        width: 95%;
         margin-block: 9%;
         align-self: flex-end;
         font-size: 18px;
@@ -152,16 +161,22 @@ div.border {
     }
 
     .about .apps {
+        margin-top: 10%;
         grid-area: 4 / 1 / 5 / 2;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        width: 40%;
     }
 
-    .about .apps img.be,
-    .about .apps img.ln {
-        width: 25%;
+    .about .apps img{
+        width: 100%;
+        margin-block: 5%;
     }
+    
 
-    .about .apps img.mail {
-        width: 26%;
+    div.border {
+        width: 85%;
     }
 
 }

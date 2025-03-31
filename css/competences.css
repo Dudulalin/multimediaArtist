@@ -7,7 +7,7 @@
 
 }
 
-.competences .border{
+.competences .border {
     width: 65%;
     height: 5px;
     background-color: var(--green);
@@ -76,4 +76,38 @@
 
 .ui-grid {
     grid-area: 6 / 1 / 7 / 2;
+}
+
+@media screen and (min-width: 150px) and (max-width: 350px) {
+    .competences {
+        height: 95vh;
+    }
+
+    .competences-grid h1 {
+        font-size: 38px;
+    }
+
+    .competences-grid h2 {
+        margin-bottom: 5%;
+    }
+
+    .competences-grid .block .categories {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .competences-grid p {
+        width: 85%;
+        font-size: 18px;
+    }
+
+    .competences-grid .logiciels {
+        margin-top: 5%;
+    }
+
+
+    .competences .border {
+        width: 90%;
+    }
+
 }

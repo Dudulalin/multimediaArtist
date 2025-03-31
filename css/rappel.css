@@ -17,7 +17,6 @@
     justify-content: center;
 }
 
-
 .rappel div.bordure {
     width: 10%;
     background-color: var(--green);
@@ -28,11 +27,60 @@
 .rappel h1 {
     color: var(--grey);
 }
-.rappel h2{
+
+.rappel h2 {
     color: var(--grey);
     font-family: Playfair Display;
 }
 
-.apps {
-    grid-area: 5 / 1 / 6 / 2;
+@media screen and (min-width: 150px) and (max-width: 350px) {
+    .rappel-grid {
+        width: 90%;
+        height: 80%;
+    }
+
+    .rappel h1 {
+        font-size: 70px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .rappel h2 {
+        font-size: 32px;
+
+
+    }
+
+    .rappel h2.first {
+        margin-block: 30%;
+        align-self: center;
+        justify-self: center;
+
+    }
+
+    .rappel h2.last {
+        margin-bottom: 30%;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .rappel-grid .apps {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .rappel-grid .apps .app {
+        margin-block: 35%;
+
+    }
+
+    .rappel-grid .apps .app img {
+        width: 100%;
+        justify-self: center;
+    }
+
+    .rappel div.bordure {
+        width: 35%;
+    }
 }
