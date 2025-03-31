@@ -5,7 +5,7 @@ const btnCv = document.querySelector(".cv-button");
 
 
 btnCv.addEventListener("click", () => {
-    const pdfUrl = "./media/file/cv_yi_sitmonternna.pdf"; // Replace with your actual PDF URL
+    const pdfUrl = "./media/documents/cv.pdf"; // Replace with your actual PDF URL
     window.open(pdfUrl, "_blank");
 });
 //-------------------------------------go up-----------------------------------
