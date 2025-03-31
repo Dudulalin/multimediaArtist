@@ -89,6 +89,35 @@ a {
     color: var(--grey);
 }
 
+@media screen and (min-width: 150px) and (max-width: 350px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .title{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width: 350px) and (max-width: 650px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .title{
+        font-size: 40px;
+    }
+}
+
 @media screen and (min-width: 650px) and (max-width: 929px) {
     h1 {
         font-size: 23px;

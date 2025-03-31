@@ -112,12 +112,7 @@ div.border {
     }
 }
 
-@media screen and (min-width: 650px) and (max-width: 930px) {
-    .about {
-        display: flex;
-        width: 100vw;
-        height: 150vh;
-    }
+@media screen and (min-width: 200px) and (max-width: 530px) {
 
     .grid-content {
 
@@ -126,13 +121,13 @@ div.border {
         grid-template-rows: 0.3fr 0.6fr 0.9fr 0.2fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
-        width: 100%;
-        height: 60%;
+        width: 90%;
+        height: 80%;
     }
 
     .picture {
         grid-area: 2 / 1 / 3 / 2;
-        width: 50%;
+        width: 100%;
         align-self: center;
     }
 
@@ -145,12 +140,15 @@ div.border {
     }
 
     .text {
-        width: 75%;
-        margin-block: 3%;
+        width: 85%;
+        margin-block: 9%;
+        align-self: flex-end;
+        font-size: 18px;
     }
 
     .link-cv {
         text-decoration: underline;
+        font-size: 35px;
     }
 
     .about .apps {
@@ -159,11 +157,11 @@ div.border {
 
     .about .apps img.be,
     .about .apps img.ln {
-        width: 5%;
+        width: 25%;
     }
 
     .about .apps img.mail {
-        width: 6%;
+        width: 26%;
     }
 
 }
