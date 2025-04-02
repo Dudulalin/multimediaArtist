@@ -56,7 +56,7 @@ filters.forEach(filter => {
         const visibleProjects = Array.from(projects).filter(proj => proj.style.display === 'block').length;
 
         // Adjust section height based on visible projects
-        projectsSection.style.height = `${visibleProjects * 100}vh`;
+        projectsSection.style.height = `${visibleProjects * 180}vh`;
     });
 });
 

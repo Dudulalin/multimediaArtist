@@ -188,21 +188,24 @@
 */
 @media screen and (min-width: 200px) and (max-width: 530px) {
 
-    
-.navigation {
-margin-block: 20%;
-}
+    .projects {
+        min-height: 200vh;
+    }
+
+    .navigation {
+        margin-block: 10%;
+    }
 
 
-.navigation .filters {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-    border-bottom: 2px solid var(--light-grey);
+    .navigation .filters {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+        border-bottom: 2px solid var(--light-grey);
 
-}
+    }
 
     .aurorae,
     .confort,
@@ -210,26 +213,28 @@ margin-block: 20%;
     .deprime {
         display: flex;
         width: 90vw;
-        min-height: 78vh;
+        min-height: 100vh;
 
     }
 
     .projet-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 0.05fr) 0.4fr 0.2fr 0.15fr 0.10fr 0.1fr;
+        grid-template-rows: repeat(2, 0.05fr) 0.6fr 0.4fr 0.15fr 0.10fr 0.1fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
     }
 
     .project-title {
+        margin-top: 10%;
         grid-area: 1 / 1 / 2 / 3;
         writing-mode: horizontal-tb;
         align-self: flex-end;
         font-size: 30px;
-        border-top: var(--green) 5px solid;
-        padding-right: 1000%;
-        
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
     }
 
     .worktype {
@@ -242,8 +247,8 @@ margin-block: 20%;
         margin-top: 2%;
     }
 
-    .worktype span{
-        margin-left: 25%;
+    .worktype span {
+        margin-left: 45%;
     }
 
 
@@ -252,6 +257,7 @@ margin-block: 20%;
         width: 100%;
         height: auto;
         align-self: flex-end;
+        margin-top: 5%;
     }
 
     .img-small {
@@ -262,22 +268,25 @@ margin-block: 20%;
         grid-area: 4 / 1 / 5 / 5;
         width: 100%;
         align-self: center;
+        margin-block: 5%;
     }
 
     .more-info {
         grid-area: 5 / 2 / 6 / 5;
         align-self: flex-end;
+
+    }
+
+    .more-info .subtitle {
+        justify-self: flex-end;
+        margin-top: 10%;
         
     }
 
-    .more-info .subtitle{
+    .more-info .extrainfo {
         justify-self: flex-end;
-        margin-bottom: 2%;
-    }
-    .more-info .extrainfo{
-        justify-self: flex-end;
-        width: 100%;
-        
+        width: 90%;
+        text-align: justify;
         margin-bottom: 2%;
     }
 
@@ -285,7 +294,8 @@ margin-block: 20%;
         grid-area: 6 / 3 / 7 / 5;
         align-self: flex-start;
         justify-self: flex-end;
-        margin-top: 5%;
+        margin-bottom: 10%;
+       
     }
 
 
@@ -295,7 +305,7 @@ margin-block: 20%;
         text-align: end;
         width: 90%;
         writing-mode: horizontal-tb;
-        border-inline: 0px solid var(--green) ;
+        border-inline: 0px solid var(--green);
         border-bottom: var(--green) 5px solid;
         align-self: start;
     }

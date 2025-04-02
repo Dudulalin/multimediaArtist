@@ -114,15 +114,21 @@ div.border {
 
 @media screen and (min-width: 200px) and (max-width: 530px) {
 
-    .grid-content {
+    .about {
+        width: 100%;
+        min-height: 215vh;
+    }
 
+    .grid-content {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.3fr 0.6fr 0.9fr 0.2fr;
+        grid-template-rows: 0.2fr 0.6fr 0.8fr 0.2fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         width: 90%;
-        height: 80%;
+        height: 90%;
+        justify-items: center;
+        align-items: center;
     }
 
     .picture {
@@ -150,7 +156,7 @@ div.border {
 
     .text {
         width: 95%;
-        margin-block: 9%;
+        margin-block: 0 2%;
         align-self: flex-end;
         font-size: 18px;
     }
@@ -161,17 +167,14 @@ div.border {
     }
 
     .about .apps {
-        margin-top: 10%;
         grid-area: 4 / 1 / 5 / 2;
         display: flex;
-        flex-direction: column;
-        justify-self: center;
-        width: 40%;
+        flex-direction: row;
+        width: 70%;
     }
 
     .about .apps img{
         width: 100%;
-        margin-block: 5%;
     }
     
 

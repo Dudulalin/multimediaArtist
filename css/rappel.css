@@ -84,3 +84,60 @@
         width: 35%;
     }
 }
+
+
+@media screen and (min-width: 375px) and (max-width: 410px) {
+    .rappel {
+        height: 100vh;
+    }
+
+    .rappel-grid {
+        width: 90%;
+        height: 90%;
+    }
+
+    .rappel h1 {
+        font-size: 60px;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .rappel h2 {
+        font-size: 27px;
+        text-align: center;
+
+    }
+
+    .rappel h2.first {
+        margin-bottom: 5%;
+        align-self: center;
+        justify-self: center;
+
+    }
+
+    .rappel h2.last {
+        align-self: center;
+        justify-self: center;
+    }
+
+    .rappel-grid .apps {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+    }
+
+    .rappel-grid .apps .app {
+        margin-block: 5%;
+
+    }
+
+    .rappel-grid .apps .app img {
+        width: 100%;
+        justify-self: center;
+    }
+
+    .rappel div.bordure {
+        width: 35%;
+    }
+}

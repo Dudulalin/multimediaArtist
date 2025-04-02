@@ -17,7 +17,7 @@
 .competences-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.5fr repeat(4, 0.7fr);
+    grid-template-rows: 0.65fr 0.5fr repeat(4, 0.7fr);
     grid-column-gap: 0px;
     grid-row-gap: 15px;
     width: 90%;
@@ -81,6 +81,40 @@
 @media screen and (min-width: 150px) and (max-width: 350px) {
     .competences {
         height: 95vh;
+    }
+
+    .competences-grid h1 {
+        font-size: 38px;
+    }
+
+    .competences-grid h2 {
+        margin-bottom: 5%;
+    }
+
+    .competences-grid .block .categories {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .competences-grid p {
+        width: 85%;
+        font-size: 18px;
+    }
+
+    .competences-grid .logiciels {
+        margin-top: 5%;
+    }
+
+
+    .competences .border {
+        width: 90%;
+    }
+
+}
+
+@media screen and (min-width: 350px) and (max-width: 410px) {
+    .competences {
+        height: 220vh;
     }
 
     .competences-grid h1 {
