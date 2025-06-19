@@ -11,6 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/buttons.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/projects.css">
     <link rel="stylesheet" href="./css/rappel.css">
@@ -25,25 +29,23 @@
 
     <nav class="navbar">
         <div class="header-logo">Sitmonternna Yi</div>
-        <div class="big-menu" id="nav-links">
-            <a href="#about">About</a>
-            <a href="#competences">Service</a>
-            <a href="#projects">Projects</a>
-            <a href="#rappel">Contact</a>
-        </div>
-        <div class="burger-menu" id="burger-menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+        <div class="burger" id="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
     </nav>
 
-    <ul class="nav-links" id="nav-links">
-        <li><a href="#about">Accueil</a></li>
-        <li><a href="#competences">Services</a></li>
-        <li><a href="#projects">À propos</a></li>
-        <li><a href="#rappel">Contact</a></li>
-    </ul>
+    <!-- Fullscreen Menu Overlay -->
+    <div class="overlay" id="menuOverlay">
+        <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#competences">Services</a></li>
+            <li><a href="#rappel">Contact</a></li>
+        </ul>
+    </div>
+
 
 
     <section class="about" id="about">
@@ -66,14 +68,12 @@
             <div class="para">
 
                 <p class="text">
-                    Étudiant en multimédia au Collège Montmorency, je développe une expertise
-                    diversifiée qui englobe la création artistique en arts multimédias 2D et 3D, la
-                    réalisation cinématographique, ainsi que le design graphique. À travers mes
-                    projets, je combine créativité et maîtrise technique pour concevoir des contenus
-                    visuels captivants, en explorant des approches innovantes dans le storytelling,
-                    l’animation, et la composition graphique. Mon objectif est de transformer des
-                    idées en expériences visuelles percutantes, en harmonie avec les tendances
-                    actuelles et les attentes du domaine.
+                    Diplômée en intégration multimédia du Collège Montmorency,
+                    je possède une expertise approfondie en création d’arts numériques 2D,
+                    en réalisation cinématographique ainsi qu’en design graphique.
+                    Je mets en œuvre une combinaison rigoureuse de créativité,
+                    de storytelling stratégique et de maîtrise technique
+                    pour concevoir des contenus visuels innovants et performants.
                 </p>
                 <a class="link-cv cv-button" href="./media/documents/cv.pdf" target="_blank">Voir mon cv >
                 </a>
@@ -81,10 +81,10 @@
 
 
             <div class="apps">
-                <a class="app" href="#">
+                <a class="app" href="mailto:ysitmonternna@gmail.com">
                     <img class="mail" src="./media/app/mail.svg" alt="app">
                 </a>
-                <a class="app" href="#">
+                <a class="app" href="https://www.linkedin.com/in/sitmonternna-yi-871a3032b" target="_blank">
                     <img class="ln" src="./media/app/ln.svg" alt="app">
                 </a>
                 <a class="app" href="#">
@@ -94,27 +94,20 @@
 
 
         </div>
-        <div class="border"></div>
+
     </section>
 
 
     <section class="projects" id="projects">
 
-        <div class="navigation">
-            <h1 class="title">projets</h1>
-            <div class="filters">
-                <h4 class="filter active" data-filter="all">tout</h4>
-                <h4 class="filter" data-filter="design">design</h4>
-                <h4 class="filter" data-filter="video">production video</h4>
-                <h4 class="filter" data-filter="interactive">intéractivité</h4>
-            </div>
-        </div>
+        <h1 class="title">projets</h1>
+
 
         <div class=" projet aurorae video">
             <div class="projet-grid">
-                <img class="img-big" src="./media/projects/thumbnail/aurorae/aurorae-big.jpg" alt="">
+                <img class="img-big" src="./project_pages/projects/thumbnail/aurorae/aurorae-big.jpg" alt="">
                 <h2 class="project-title">Aurorae</h2>
-                <img class="img-small" src="./media/projects/thumbnail/aurorae/aurorae-small.jpg" alt="">
+                <img class="img-small" src="./project_pages/projects/thumbnail/aurorae/aurorae-small.jpg" alt="">
                 <div class="more-info">
                     <h3 class="subtitle">Technique</h3>
                     <p class="extrainfo">
@@ -126,10 +119,8 @@
                 </div>
                 <p class="worktype"> Hivers 2023 <br> <span>projet scolaire</span></p>
                 <p class="description">
-                    Aurorae est un court-métrage immersif qui raconte la quête de soi d’un personnage énigmatique,
-                    confronté à une transformation intérieure profonde. À travers un voyage psychologique intense,
-                    l’histoire explore les doutes, les révélations et les mystères de l’esprit humain, invitant à une
-                    réflexion sur les changements qui façonnent notre identité.
+                    Une projection immersive sur trois murs, accompagnée d’un petit téléviseur,
+                    présente un film sans narration, mis en lumière par des jeux de lumières en direct.
                 </p>
                 <button class="btn-more square-button rect-button"
                     onclick="window.location.href='./project_pages/aurorae.html';">en <br>
@@ -141,9 +132,10 @@
 
         <div class=" projet internature interactive">
             <div class="projet-grid">
-                <img class="img-big" src="./media/projects/thumbnail/internature/internature_big.png" alt="">
+                <img class="img-big" src="./project_pages/projects/thumbnail/internature/internature_big.png" alt="">
                 <h2 class="project-title">internature</h2>
-                <img class="img-small" src="./media/projects/thumbnail/internature/internature_small.jpg" alt="">
+                <img class="img-small" src="./project_pages/projects/thumbnail/internature/internature_small.jpg"
+                    alt="">
                 <div class="more-info">
                     <h3 class="subtitle">Technique</h3>
                     <p class="extrainfo">
@@ -167,9 +159,9 @@
 
         <div class=" projet confort video">
             <div class="projet-grid">
-                <img class="img-big" src="./media/projects/thumbnail/confort/confort-big.jpg" alt="">
+                <img class="img-big" src="./project_pages/projects/thumbnail/confort/confort-big.jpg" alt="">
                 <h2 class="project-title">confort dore</h2>
-                <img class="img-small" src="./media/projects/thumbnail/confort/confort-small.jpg" alt="">
+                <img class="img-small" src="./project_pages/projects/thumbnail/confort/confort-small.jpg" alt="">
                 <div class="more-info">
                     <h3 class="subtitle">Technique</h3>
                     <p class="extrainfo">
@@ -191,14 +183,13 @@
 
         <div class=" projet deprime design">
             <div class="projet-grid">
-                <img class="img-big" src="./media/projects/thumbnail/deprime/deprime_big.jpg" alt="">
-                <h2 class="project-title">confort dore</h2>
-                <img class="img-small" src="./media/projects/thumbnail/deprime/deprime_small.jpg" alt="">
+                <img class="img-big" src="./project_pages/projects/thumbnail/deprime/deprime_big.jpg" alt="">
+                <h2 class="project-title">Déprime</h2>
+                <img class="img-small" src="./project_pages/projects/thumbnail/deprime/deprime_small.jpg" alt="">
                 <div class="more-info">
                     <h3 class="subtitle">Technique</h3>
                     <p class="extrainfo">
-                        Prise de vidéos macro, conception et montage vidéo avec Davinci resolve et montage sonore avec
-                        Repear.
+                        Conception de jeu mobile, dessin vectoriel, sprite sheet, design ux/ui
                     </p>
                 </div>
                 <p class="worktype">Hivers 2023 <br> <span>projet scolaire</span></p>
@@ -209,7 +200,7 @@
                 </p>
                 <button class="btn-more square-button" onclick="window.location.href='./project_pages/confort.html';">en
                     <br> savoir <br> plus</button>
-                <p class="classification"> PRODUCTION VIDEO & SONORE</p>
+                <p class="classification"> Dessin vectoriel & ui/ux</p>
             </div>
         </div>
 
@@ -220,7 +211,8 @@
 
     <section class="rappel" id="rappel">
         <div class="rappel-grid">
-            <h1>allo !</h1>
+            <div class="border-small"></div>
+            <h1>allo&nbsp;!</h1>
             <h2 class="first">interesser par mon portfolio ?
             </h2>
             <h2 class="last">
@@ -247,16 +239,18 @@
     <section class="competences" id="competences">
         <div class="border"></div>
         <div class="competences-grid">
+            <div class="competences-header">
+                <h1>Compétences et vision</h1>
+                <p>Mon intérêt porte sur la création d’art numérique, à la fois statique et interactif,
+                    dynamique et conçu pour offrir une expérience mémorable à l’utilisateur.
+                </p>
+            </div>
 
-            <h1>Compétences <br> et vision</h1>
-            <p>Mon intérêt porte sur la création d’art numérique, à la fois statique et interactif,
-                dynamique et conçu pour offrir une expérience mémorable à l’utilisateur.
-            </p>
             <div class="design-grid block">
                 <h2>design</h2>
                 <div class="categories">
-                    <h4>Graphic -</h4>
-                    <h4>Site web -</h4>
+                    <h4>Graphic -&nbsp;</h4>
+                    <h4>Site web -&nbsp;</h4>
                     <h4>Affiche</h4>
                 </div>
 
@@ -272,8 +266,8 @@
             <div class="interactive-grid block">
                 <h2>art interactive</h2>
                 <div class="categories">
-                    <h4>Art digital -</h4>
-                    <h4>Projection intéractive -</h4>
+                    <h4>Art digital -&nbsp;</h4>
+                    <h4>Projection intéractive -&nbsp;</h4>
                     <h4>Temps réel</h4>
                 </div>
 
@@ -289,8 +283,8 @@
             <div class="video-grid block">
                 <h2>Production vidéo</h2>
                 <div class="categories">
-                    <h4>Tournage vidéo</h4>
-                    <h4>Montage de vidéo</h4>
+                    <h4>Tournage vidéo -&nbsp; </h4>
+                    <h4>Montage de vidéo -&nbsp; </h4>
                     <h4>Montage sonore</h4>
                 </div>
 
@@ -306,7 +300,7 @@
             <div class="ui-grid block">
                 <h2>ui/ux</h2>
                 <div class="categories">
-                    <h4>aborescence</h4>
+                    <h4>aborescence -&nbsp;</h4>
                     <h4>prototype</h4>
                 </div>
 

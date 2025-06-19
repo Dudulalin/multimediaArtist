@@ -1,10 +1,16 @@
 .competences {
-    height: 200vh;
+    min-height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 
+}
+
+div.categories h4{
+    color: var(--smoke) !important;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .competences .border {
@@ -15,12 +21,12 @@
 }
 
 .competences-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.65fr 0.5fr repeat(4, 0.7fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 15px;
-    width: 90%;
+   display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(5, auto);
+grid-column-gap: 0px;
+grid-row-gap: 20px;
+    width: 80%;
     align-items: center;
     justify-content: center;
     justify-items: stretch;
@@ -28,12 +34,23 @@
 
 .competences-grid .block {
     border-top: var(--light-grey) solid 2px;
-    padding-block: 5%;
+    padding-block: 2.5%;
 }
 
 .competences-grid .block h2 {
     color: var(--green);
     font-weight: 300;
+}
+
+.competences-grid .block div.logiciels h4{
+    color: var(--grey);
+    font-weight: 300;
+        margin-bottom: 5px;
+}
+
+.competences-grid .block div.logiciels p{
+    color: var(--grey);
+    font-weight: 200;
 }
 
 .competences-grid .block .categories {
@@ -51,31 +68,34 @@
 .competences-grid .block .logiciels p {
     color: var(--green);
 }
+.competences-header{
+        grid-area: 1 / 1 / 2 / 2;
 
+        margin-block: 8%;
+}
 .competences-grid h1 {
-    grid-area: 1 / 1 / 2 / 2;
     color: var(--green);
 }
 
 .competences-grid p {
-    grid-area: 2 / 1 / 3 / 2;
+    margin-top: 1%;
     width: 65%;
 }
 
 .design-grid {
-    grid-area: 3 / 1 / 4 / 2;
+    grid-area: 2 / 1 / 3 / 2;
 }
 
 .interactive-grid {
-    grid-area: 4 / 1 / 5 / 2;
+    grid-area: 3 / 1 / 4 / 2;
 }
 
 .video-grid {
-    grid-area: 5 / 1 / 6 / 2;
+    grid-area:  4 / 1 / 5 / 2;
 }
 
 .ui-grid {
-    grid-area: 6 / 1 / 7 / 2;
+    grid-area: 5 / 1 / 6 / 2;
 }
 
 @media screen and (min-width: 150px) and (max-width: 350px) {

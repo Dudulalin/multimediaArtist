@@ -1,4 +1,23 @@
+//--------------------------------navbar-----------------------------------
+// Toggle the menu
 
+const burger = document.getElementById('burger');
+    const overlay = document.getElementById('menuOverlay');
+
+    burger.addEventListener('click', () => {
+      overlay.classList.toggle('open');
+      burger.classList.toggle('toggle');
+    });
+
+    // Optional: close menu when a link is clicked
+    document.querySelectorAll('.overlay a').forEach(link => {
+      link.addEventListener('click', () => {
+        overlay.classList.remove('open');
+        burger.classList.remove('toggle');
+      });
+    });
+
+      
         
 //-------------------------------------cv button-----------------------------------
 const btnCv = document.querySelector(".cv-button");
@@ -21,16 +40,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-const burgerMenu = document.getElementById("burger-menu");
-const navLinks = document.getElementById("nav-links");
-
-burgerMenu.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-    burgerMenu.classList.toggle("active");
-});
-
+  
 //--------------------------------projet filter-----------------------------------
-
+/*
 const filters = document.querySelectorAll('.filter');
 const projects = document.querySelectorAll('.projet');
 const projectsSection = document.getElementById('projects');
@@ -64,4 +76,4 @@ filters.forEach(filter => {
 window.addEventListener('load', () => {
     document.querySelector('.filter[data-filter="all"]').click();
 });
-
+*/

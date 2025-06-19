@@ -17,20 +17,26 @@
     justify-content: center;
 }
 
-.rappel div.bordure {
+.rappel div.border-small {
     width: 10%;
     background-color: var(--green);
     height: 3px;
-    margin-top: 8%;
+    margin-bottom: 5%;
 }
 
 .rappel h1 {
     color: var(--grey);
+    margin-bottom: 30px;
 }
 
 .rappel h2 {
     color: var(--grey);
     font-family: Playfair Display;
+    text-align: center;
+}
+
+.rappel h2.last {
+    margin-bottom: 35px;
 }
 
 @media screen and (min-width: 150px) and (max-width: 350px) {

@@ -11,100 +11,197 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/general.css">
-    <link rel="stylesheet" href="../css/projet.css">
+    <link rel="stylesheet" href="./projet_css/preprod.css">
+    <link rel="stylesheet" href="./projet_css/preview.css">
+    <link rel="stylesheet" href="./projet_css/presentation.css">
+    <link rel="stylesheet" href="./projet_css/project.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/header.css">
     <title>Sitmonternna Yi - Aurorae</title>
 </head>
 
 <body>
+    <!-- Burger Icon -->
+
     <nav class="navbar">
         <div class="header-logo">Sitmonternna Yi</div>
-        <div class="big-menu" id="nav-links">
-            <a href="../index.html#about">About</a>
-            <a href="../index.html#competences">Service</a>
-            <a href="../index.html#projects">Projects</a>
-            <a href="../index.html#rappel">Contact</a>
-        </div>
-        <div class="burger-menu" id="burger-menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+        <div class="burger" id="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
     </nav>
 
-    <ul class="nav-links" id="nav-links">
-        <li><a href="../index.html#about">Accueil</a></li>
-        <li><a href="../index.html#competences">Services</a></li>
-        <li><a href="../index.html#projects">À propos</a></li>
-        <li><a href="../index.html#rappel">Contact</a></li>
-    </ul>
+    <!-- Fullscreen Menu Overlay -->
+    <div class="overlay" id="menuOverlay">
+        <ul>
+            <li><a href="../index.html#about">À propos</a></li>
+            <li><a href="../index.html#projects">Projets</a></li>
+            <li><a href="../index.html#competences">Services</a></li>
+            <li><a href="../index.html#rappel">Contact</a></li>
+        </ul>
+    </div>
 
-    <div class="presentation">
-        <div class="present-box">
-            <div class="nom">
-                <h1 class="titre projet-titre">Aurorae</h1>
-                <h3 class="sous-titre">Court métrage</h3>
+    <div class="preview">
+
+        <div class="preview-box">
+            <a class="arrow" href="../index.html#projects">
+                <img src="./projects/arrow.png" alt="arrow">
+            </a>
+
+            <div class="name-box">
+                <h1 class="titre">Aurorae</h1>
+                <h3 class="sous-titre">Court métrage - 2023</h3>
+            </div>
+
+            <a class="btn-see-more" href="#project">voir le projet</a>
+
+
+            <div class="work description">
+                <p>Type de travail</p>
+                <h4>Production video</h4>
+                <h4>Montage video et sonore</h4>
+                <h4>Colorisation</h4>
+            </div>
+
+            <div class="softwares description">
+                <p>Applications</p>
+                <h4>Davinci resolve</h4>
+                <h4>Reaper</h4>
+            </div>
+
+            <div class="skills description">
+                <p>Competences techniques</p>
+                <h4>Storyboard </h4>
+                <h4>Opération de caméra </h4>
+                <h4>Mise en scène</h4>
+            </div>
+
+            <div class="purpose description">
+                <p>Type de projet</p>
+                <h4>Projet scolaire</h4>
             </div>
 
 
-            <iframe class="video" src="https://www.youtube.com/embed/qD21wO-teCk" allowfullscreen></iframe>
-        </div>
 
+
+        </div>
     </div>
 
+    <div class="presentation">
+        <div class="presentation-box">
+            <div class="synopsis-head">
+                <h2 class="synopsis-header header">Une narrative à <br> l'image uniquement</h2>
+                <h3 class="synopsis-title">Intention</h3>
+            </div>
 
-    <div class="synopsis info">
-        <div class="synopsis-box info-box">
-            <h3 class="title-left">Synopsis</h3>
-            <p class="sub-left">Aurorae Luna est une démone âgée de 555 ans qui détient deux pouvoirs différents qui se contrastent.
-                C'est deux pouvoirs contrastants  lui fait souffrir mentalement. Elle apeure d'accepter ses deux
-                côtés.
-                Cette peur l’emporte à se tuer et mourir.
+            <p class="synopsis-content">
+                Une projection immersive se déploie sur trois murs, enveloppant le spectateur d’images en mouvement.
+                Un petit téléviseur complète l’installation en ajoutant une touche plus intime et narrative.
+                Des jeux de lumières en direct accompagnent la vidéo et renforcent l’ambiance de la scène.
+                L’ensemble crée une expérience sensorielle mêlant image, son et lumière.
+                Le spectateur est plongé dans un univers vivant, entre art visuel et performance.
             </p>
+
+
+            <div class="role">
+                <h4>Role</h4>
+                <p>Directrice artistique</p>
+                <p>Editrice video et sonore</p>
+                <p>Scenarisation</p>
+            </div>
         </div>
+
 
     </div>
 
-    <div class="role info">
-        <div class="role-box info-box">
-            <h3 class="title-right">Mon rôle</h3>
-            <p class="sub-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et
-                dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+    <div class="project" id="project">
+        <div class="projet-box">
+            <iframe class="video-projection video" src="https://www.youtube.com/embed/qD21wO-teCk" allowfullscreen></iframe>
+
+            <h3 class="subheader-video">Video pour le mapping</h3>
+            <iframe class="video-mapping video" src="https://www.youtube.com/embed/qD21wO-teCk" allowfullscreen></iframe>
+
+            <h3 class="subheader-credits credits">Credits</h3>
+
+            <div class="realisation credits">
+                <p>Réalisation</p>
+                <h4>Sitmonternna Yi</h4>
+                <h4>Jérémy Duverseau</h4>
+                <h4>Victor Gileau</h4>
+                <h4>Maik Hamel</h4>
+            </div>
+
+            <div class="sound-creation credits">
+                <p>Preneurs de son</p>
+                <h4>Victor Gileau</h4>
+                <h4>Maik Hamel</h4>
+            </div>
+
+            <div class="acting credits">
+                <p>Acting</p>
+                <h4>Maika Nau</h4>
+            </div>
+
+
+            <div class="outfits credits">
+                <p>Costumes</p>
+                <h4>Sitmonternna Yi</h4>
+                <h4>Jérémy Duverseau</h4>
+            </div>
+
+            <div class="under-direction credits">
+                <p>Encadré par</p>
+                <h4>Francoise Lavoie-Pilote</h4>
+            </div>
+
+            <div class="technicians credits">
+                <p>Gros merci aux ttps</p>
+                <h4>Antoine Allards</h4>
+                <h4>William Racine</h4>
+            </div>
+
+
         </div>
-
-    </div>
-
-    <div class="credits info">
-        <div class="credits-box info-box">
-            <h3 class="title-left">Crédits</h3>
-            <p class="sub-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et
-                dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-        </div>
-
     </div>
 
 
 
     <div class="preprod">
-        <div class="preprod-border"></div>
+        <div class="preprod-box">
+            <div class="preprod-head">
+                <h2 class="preprod-header header">Penser, analyser, <br> rechercher pour créer</h2>
+                <h3 class="preprod-title">Pré-Production</h3>
+            </div>
 
-        <div class="gallery">
-            <h2>Pré-Production</h2>
-            <img class="pic1" src="../media/projects/aurorae/moodboard.jpg" alt="">
-            <img class="pic2" src="../media/projects/aurorae/realisation.jpg" alt="">
-            <img class="pic3" src="../media/projects/aurorae/photo.jpg" alt="">
-            <img class="pic4" src="../media/projects/aurorae/colorisation.jpg" alt="">
-            <img class="pic5" src="../media/projects/aurorae/projection.jpg" alt="">
-            <img class="pic6" src="../media/projects/aurorae/casting.jpg" alt="">
-            <button class="more-btn long-btn">En savoir plus</button>
+
+            <div class="preprod-content">
+
+                <h3 class="preprod-subtitle">
+                    approche de la réalisation
+                </h3>
+
+                <p class="preprod-para">
+                    Aurorae est une vidéo du genre fantastique inspiré de danse contemporaine. L’
+                    ambiance est contrastante, d’une partie l’ambiance est sombre et froide et d'un
+                    autre par l’ambiance est claire et détendue. L’ambiance de la première partie de
+                    la vidéo est représentée par les couleurs blanc et rouge. Tandis que l’ambiance de
+                    la deuxième partie est représentée par les couleurs noir et doré. Aurorae nous
+                    présente les sentiments de notre personnage: peur, inquiétude, stresse. Ces
+                    sentiments sont présentés par des actions uniques, d'expressions faciales du
+                    personnage et de danses possessives.
+                </p>
+
+            </div>
+
+            <a class="btn-see-more-dark" href="../media/documents/pré-production_aurorae.pdf" target="_blank">tout
+                voir</a>
         </div>
-    </div>
-
 
     </div>
+
 
     <footer class="footer">
         <div class="border"></div>
@@ -134,7 +231,7 @@
         </div>
     </footer>
 
-    <script src="./main.js"></script>
+    <script src="../main.js"></script>
 </body>
 
 </html>
