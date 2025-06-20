@@ -143,6 +143,44 @@ div.border {
     }
 }
 
+@media screen and (min-width: 531px) and (max-width: 649px) {
+    .grid-content {
+        display: grid;
+        grid-template-columns: 0.6fr 1fr;
+        grid-template-rows: 0.4fr 1fr 0.3fr;
+        grid-column-gap: 50px;
+        grid-row-gap: 0px;
+        min-height: 80vh;
+    }
+
+    .picture {
+        grid-area: 2 / 1 / 4 / 2;
+        width: 100%;
+        height: auto;
+        align-self: flex-end;
+    }
+
+    .name {
+        grid-area: 1 / 1 / 2 / 3;
+        align-self: end;
+    }
+
+    .para {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .text {
+
+        width: 80%;
+    }
+
+    .apps {
+        grid-area: 3 / 2 / 4 / 3;
+        align-items: center;
+
+
+    }
+}
 
 @media screen and (min-width: 200px) and (max-width: 530px) {
 
@@ -222,10 +260,11 @@ div.border {
     .about .apps img {
         margin-bottom: 20px;
     }
+
     .title {
-    margin-bottom: 4% !important;
-    align-self: center;
-}
+        margin-bottom: 4% !important;
+        align-self: center;
+    }
 
     .about div.border {
         grid-area: 4 / 1 / 5 / 2;
@@ -289,26 +328,27 @@ div.border {
 @media screen and (min-width: 1024px) and (max-width: 1250px) {
     .grid-content {
         display: grid;
-        grid-template-columns: 0.4fr 0.6fr;
-        grid-template-rows: 0.3fr repeat(2, 0.5fr) 0.2fr;
-        grid-column-gap: 0px;
+        grid-template-columns: 0.4fr 1fr;
+        grid-template-rows: 0.4fr 1fr 0.3fr;
+        grid-column-gap: 50px;
         grid-row-gap: 0px;
         width: 94%;
-        height: 80%;
+        height: 60vh;
 
     }
 
     .picture {
-        grid-area: 1 / 1 / 5 / 2;
-        ;
+        grid-area: 2 / 1 / 4 / 2;
+        width: auto;
+        height: 100%;
     }
 
     .name {
-        grid-area: 1 / 2 / 2 / 3;
+        grid-area: 1 / 1 / 2 / 3;
     }
 
     .para {
-        grid-area: 3 / 2 / 4 / 3;
+        grid-area: 2 / 2 / 3 / 3;
     }
 
     .text {
@@ -320,7 +360,7 @@ div.border {
     }
 
     .about .apps {
-        grid-area: 4 / 2 / 5 / 3;
+        grid-area: 3 / 2 / 4 / 3;
         align-self: flex-end;
     }
 
