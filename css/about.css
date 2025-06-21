@@ -234,7 +234,7 @@ div.border {
 
     .about {
         width: 100%;
-        min-height: 100vh;
+        min-height: 110vh;
         justify-content: flex-end;
         align-content: flex-end;
     }

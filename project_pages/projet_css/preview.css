@@ -10,6 +10,7 @@ body {
     background-color: var(--beige);
 }
 
+
 .preview {
     width: 100vw;
     height: 100vh;
@@ -25,9 +26,9 @@ body {
 
 .preview-box {
     display: grid;
-    grid-template-columns: 1fr 1fr repeat(2, 1fr);
-    grid-template-rows: 0.4fr auto 0.3fr 1fr 0.45fr;
-    grid-column-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.6fr 1.5fr 0.5fr;
+    grid-column-gap: 0px;
     grid-row-gap: 0px;
     width: 90%;
     height: 90%;
@@ -41,23 +42,23 @@ body {
 }
 
 div.work {
-    grid-area: 5 / 1 / 6 / 2;
+    grid-area: 3 / 1 / 4 / 2;
     justify-self: flex-start;
 }
 
 div.softwares {
-    grid-area: 5 / 2 / 6 / 3;
+    grid-area: 3 / 2 / 4 / 3;
     justify-self: center;
 }
 
 div.skills {
-    grid-area: 5 / 3 / 6 / 4;
+    grid-area: 3 / 3 / 4 / 4;
     justify-self: center;
 
 }
 
 div.purpose {
-    grid-area: 5 / 4 / 6 / 5;
+    grid-area: 3 / 4 / 4 / 5;
     justify-self: flex-end;
 }
 
@@ -83,7 +84,12 @@ div.purpose {
 
 .name-box {
     grid-area: 2 / 1 / 3 / 3;
-    width: 67%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+
 }
 
 .titre {
@@ -106,6 +112,7 @@ a.btn-see-more {
     margin-left: -20%;
     color: var(--beige);
     border: var(--beige) solid 1px;
+    margin-top: 1%;
     padding: 1% 3%;
     justify-self: center;
     align-self: center;
@@ -116,14 +123,30 @@ a.btn-see-more {
 /* responsive*/
 
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 349px) {
+    .preview-internature {
+        background-image: url("../projects/thumbnail/internature/internature_big.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 200%;
+    }
 
-    .preview {
-        height: 100vh;
+    .preview-aurorae {
         background-image: url("../projects/thumbnail/aurorae/aurorae-big.jpg");
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 155%;
+        background-size: 180%;
+    }
+
+    .preview-confort {
+        background-image: url("../projects/thumbnail/confort/confort-big.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 180%;
+    }
+
+    .preview {
+        height: 100vh;
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: flex-start;
@@ -191,29 +214,63 @@ a.btn-see-more {
         justify-self: flex-start;
     }
 }
-@media screen and (min-width: 150px) and (max-width: 350px) {
-    .preview {
-        height: 100vh;
+
+@media screen and (min-width: 350px) and (max-width: 374px) {
+    .preview-internature {
+        background-image: url("../projects/thumbnail/internature/internature_big.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 155%;
+    }
+
+    .preview-aurorae {
         background-image: url("../projects/thumbnail/aurorae/aurorae-big.jpg");
         background-repeat: no-repeat;
         background-position: center;
+        background-size: 155%;
+    }
+
+    .preview-confort {
+        background-image: url("../projects/thumbnail/confort/confort-big.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 155%;
+    }
+
+    .preview {
+        height: 100vh;
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-end;
-        background-size: 190%;
-
 
     }
 }
-@media screen and (min-width: 375px) and (max-width: 409px) {
 
-    .preview {
-        height: 100vh;
+@media screen and (min-width: 375px) and (max-width: 409px) {
+    .preview-internature {
+        background-image: url("../projects/thumbnail/internature/internature_big.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 170%;
+    }
+
+    .preview-aurorae {
         background-image: url("../projects/thumbnail/aurorae/aurorae-big.jpg");
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 190%;
+        background-size: 170%;
+    }
+
+    .preview-confort {
+        background-image: url("../projects/thumbnail/confort/confort-big.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 150%;
+    }
+
+    .preview {
+        height: 100vh;
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: flex-start;
@@ -234,6 +291,7 @@ a.btn-see-more {
 
     .arrow {
         grid-area: 1 / 1 / 2 / 2;
+        width: 100%;
     }
 
     .name-box {
@@ -283,13 +341,29 @@ a.btn-see-more {
 }
 
 @media screen and (min-width: 410px) and (max-width: 474px) {
+    .preview-internature {
+        background-image: url("../projects/thumbnail/internature/internature_big.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 165%;
+    }
 
-    .preview {
-        height: 100vh;
+    .preview-aurorae {
         background-image: url("../projects/thumbnail/aurorae/aurorae-big.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 165%;
+    }
+
+    .preview-confort {
+        background-image: url("../projects/thumbnail/confort/confort-big.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 165%;
+    }
+
+    .preview {
+        height: 100vh;
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: flex-start;
@@ -359,14 +433,123 @@ a.btn-see-more {
     }
 }
 
-@media screen and (min-width: 475px) and (max-width: 767px) {
+@media screen and (min-width: 475px) and (max-width: 539px) {
+    .preview-internature {
+        background-image: url("../projects/thumbnail/internature/internature_big.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
 
-    .preview {
-        height: 100vh;
+    .preview-aurorae {
         background-image: url("../projects/thumbnail/aurorae/aurorae-big.jpg");
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 165%;
+        background-size: 100%;
+    }
+
+    .preview-confort {
+        background-image: url("../projects/thumbnail/confort/confort-big.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .preview {
+        height: 100vh;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+
+    }
+
+    .preview-box {
+        width: 50vw;
+        height: 92vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0.2fr auto 1fr repeat(4, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin-left: 7%;
+    }
+
+    .arrow {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 100%;
+    }
+
+    .name-box {
+        grid-area: 2 / 1 / 3 / 4;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    h3.sous-titre {
+        font-size: 12px;
+    }
+
+    .titre {
+        font-size: 48px;
+    }
+
+    .btn-see-more {
+        grid-area: 3 / 1 / 4 / 4 !important;
+        align-self: flex-start !important;
+        font-size: 12px;
+        margin-left: 0 !important;
+    }
+
+    div.description {
+        margin-bottom: 13%;
+    }
+
+    div.work {
+        grid-area: 4 / 1 / 5 / 4;
+        justify-self: flex-start;
+    }
+
+    div.softwares {
+        grid-area: 5 / 1 / 6 / 4;
+        justify-self: flex-start;
+    }
+
+    div.skills {
+        grid-area: 6 / 1 / 7 / 4;
+        justify-self: flex-start;
+    }
+
+    div.purpose {
+        grid-area: 7 / 1 / 8 / 4;
+        justify-self: flex-start;
+    }
+}
+
+@media screen and (min-width: 540px) and (max-width: 767px) {
+    .preview-internature {
+        background-image: url("../projects/thumbnail/internature/internature_big.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .preview-aurorae {
+        background-image: url("../projects/thumbnail/aurorae/aurorae-big.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .preview-confort {
+        background-image: url("../projects/thumbnail/confort/confort-big.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .preview {
+        height: 100vh;
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: flex-start;
@@ -438,12 +621,29 @@ a.btn-see-more {
 
 @media screen and (min-width: 768px) and (max-width: 820px) {
 
-    .preview {
-        height: 100vh;
+    .preview-internature {
+        background-image: url("../projects/thumbnail/internature/internature_big.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 105%;
+    }
+
+    .preview-aurorae {
         background-image: url("../projects/thumbnail/aurorae/aurorae-big.jpg");
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 100%;
+        background-size: 105%;
+    }
+
+    .preview-confort {
+        background-image: url("../projects/thumbnail/confort/confort-big.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 105%;
+    }
+
+    .preview {
+        height: 100vh;
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: center;
@@ -479,12 +679,29 @@ a.btn-see-more {
 }
 
 @media screen and (min-width: 821px) and (max-width: 929px) {
-    .preview {
-        height: 100vh;
+    .preview-internature {
+        background-image: url("../projects/thumbnail/internature/internature_big.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 115%;
+    }
+
+    .preview-aurorae {
         background-image: url("../projects/thumbnail/aurorae/aurorae-big.jpg");
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 165%;
+        background-size: 115%;
+    }
+
+    .preview-confort {
+        background-image: url("../projects/thumbnail/confort/confort-big.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 115%;
+    }
+
+    .preview {
+        height: 100vh;
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: flex-start;
@@ -554,13 +771,63 @@ a.btn-see-more {
     }
 }
 
-@media screen and (min-width: 930px) {
-    .preview {
-        height: 100vh;
-        background-image: url("../projects/thumbnail/aurorae/aurorae-small.jpg");
+@media screen and (min-width: 930px) and (max-width: 1229px) {
+
+    .preview-internature {
+        background-image: url("../projects/thumbnail/internature/internature_big.png");
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 130%;
+        background-size: 100%;
+    }
+
+    .preview-aurorae {
+        background-image: url("../projects/thumbnail/aurorae/aurorae-big.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .preview-confort {
+        background-image: url("../projects/thumbnail/confort/confort-big.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .preview {
+        display: flex;
+        height: 100vh;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width: 1230px) {
+    .preview-internature {
+        background-image: url("../projects/thumbnail/internature/internature_big.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .preview-aurorae {
+        background-image: url("../projects/thumbnail/aurorae/aurorae-big.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .preview-confort {
+        background-image: url("../projects/thumbnail/confort/confort-big.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .preview {
+        height: 100vh;
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: center;
@@ -573,14 +840,12 @@ a.btn-see-more {
     }
 
     .name-box {
-        grid-area: 2 / 1 / 3 / 2;
-        width: 100%;
+        width: 70%;
     }
 
     a.btn-see-more {
         grid-area: 3 / 1 / 4 / 2;
         margin: 0;
-        align-self: flex-start;
         margin-top: 3%;
     }
 

@@ -162,6 +162,7 @@
     .projects {
         min-height: 100vh;
         align-items: flex-end;
+        margin-top: 20vh;
     }
 
     .navigation {
@@ -490,9 +491,18 @@
     .internature,
     .deprime {
         display: flex;
-        height: 20vh;
+        height: 100vh;
     }
 
+    .img-small {
+
+        align-self: end;
+    }
+
+    .img-big {
+
+        align-self: center;
+    }
 }
 
 @media screen and (min-width: 2500px) {

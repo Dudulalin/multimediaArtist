@@ -26,10 +26,10 @@
     grid-row-gap: 0px;
     min-height: 70vh;
 }
-
-.synopsis-head {
+.presentation-header {
     grid-area: 1 / 1 / 2 / 2;
-    align-content: end;
+    align-content: center;
+    width: 100%;
 }
 
 .synopsis-header {
