@@ -102,7 +102,6 @@ a {
 
 a.link-cv {
     font-size: 16px;
-    text-decoration: underline;
 }
 
 .sous-titre {
@@ -545,7 +544,7 @@ a.link-cv {
 
 @media screen and (min-width: 810px) and (max-width: 929px) {
     h1 {
-        font-size: 23px;
+        font-size: 45px;
     }
 
     p {
@@ -662,16 +661,27 @@ a.link-cv {
     }
 
     h1.title {
-        font-size: 90px;
+        font-size: 60px;
 
     }
 
     p.worktype {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     h2.project-title {
-        font-size: 50px;
+        font-size: 25px;
+    }
+
+    .internature h2.project-title{
+        font-size: 18px;
+    }
+
+    .confort h2.project-title{
+        font-size: 16px;
+    }
+    .internature p.classification{
+        font-size: 12px;
     }
 
     .rappel h1 {

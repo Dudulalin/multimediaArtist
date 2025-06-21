@@ -7,7 +7,7 @@
 
 }
 
-div.categories h4{
+div.categories h4 {
     color: var(--smoke) !important;
     font-weight: 400;
     text-transform: uppercase;
@@ -15,17 +15,17 @@ div.categories h4{
 
 .competences .border {
     width: 65%;
-    height: 5px;
+    height: 3px;
     background-color: var(--green);
     align-self: flex-start;
 }
 
 .competences-grid {
-   display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: repeat(5, auto);
-grid-column-gap: 0px;
-grid-row-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
     width: 80%;
     align-items: center;
     justify-content: center;
@@ -42,13 +42,13 @@ grid-row-gap: 20px;
     font-weight: 300;
 }
 
-.competences-grid .block div.logiciels h4{
+.competences-grid .block div.logiciels h4 {
     color: var(--grey);
     font-weight: 300;
-        margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
-.competences-grid .block div.logiciels p{
+.competences-grid .block div.logiciels p {
     color: var(--grey);
     font-weight: 200;
 }
@@ -68,11 +68,13 @@ grid-row-gap: 20px;
 .competences-grid .block .logiciels p {
     color: var(--green);
 }
-.competences-header{
-        grid-area: 1 / 1 / 2 / 2;
 
-        margin-block: 8%;
+.competences-header {
+    grid-area: 1 / 1 / 2 / 2;
+
+    margin-block: 8%;
 }
+
 .competences-grid h1 {
     color: var(--green);
 }
@@ -91,7 +93,7 @@ grid-row-gap: 20px;
 }
 
 .video-grid {
-    grid-area:  4 / 1 / 5 / 2;
+    grid-area: 4 / 1 / 5 / 2;
 }
 
 .ui-grid {
@@ -164,4 +166,10 @@ grid-row-gap: 20px;
         width: 90%;
     }
 
+}
+
+@media screen and (min-width: 850px) and (max-width: 1024px) {
+    .competences .border {
+        width: 85%;
+    }
 }
