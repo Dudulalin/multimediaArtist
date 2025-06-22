@@ -10,6 +10,33 @@ body {
     background-color: var(--beige);
 }
 
+.preview-internature {
+        background-image: url("../projects/thumbnail/internature/internature_big.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 200%;
+    }
+
+    .preview-aurorae {
+        background-image: url("../projects/thumbnail/aurorae/aurorae-small.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 180%;
+    }
+
+    .preview-confort {
+        background-image: url("../projects/thumbnail/confort/confort-small.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 180%;
+    }
+
+    .preview-deprime {
+        background-image: url("../projects/thumbnail/deprime/deprime_small.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 180%;
+    }
 
 .preview {
     width: 100vw;
@@ -18,10 +45,6 @@ body {
     align-items: center;
     justify-content: flex-end;
     flex-direction: column;
-    background-image: url("../projects/thumbnail/aurorae/aurorae-small.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 120%;
 }
 
 .preview-box {
@@ -403,7 +426,8 @@ a.btn-see-more {
 
     .btn-see-more {
         grid-area: 3 / 1 / 4 / 4 !important;
-        align-self: flex-start !important;
+        align-self: center !important;
+        margin-top: 4% !important;
         font-size: 12px;
         margin-left: 0 !important;
     }

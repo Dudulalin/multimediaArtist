@@ -363,6 +363,10 @@ a.link-cv {
 
 @media screen and (min-width: 377px) and (max-width: 429px) {
 
+    h1.long-titre {
+        font-size: 25px !important;
+    }
+
     p.worktype {
         font-size: 18px;
     }
@@ -388,7 +392,8 @@ a.link-cv {
     }
 
     p {
-        font-size: 12px;
+        font-size: 16px;
+        text-align: justify;
     }
 
     h2 {
@@ -404,7 +409,8 @@ a.link-cv {
     }
 
     .role p {
-        font-size: 8px;
+        font-size: 10px;
+        text-align: right;
     }
 
     h4 {
@@ -412,7 +418,7 @@ a.link-cv {
     }
 
     h3 {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .title {
@@ -945,7 +951,12 @@ a.link-cv {
     h1.titre {
         font-size: 85px;
     }
-    h1.internature-titre{
+
+    h1.long-titre {
+        font-size: 50px;
+    }
+
+    h1.internature-titre {
         font-size: 58px;
     }
 
