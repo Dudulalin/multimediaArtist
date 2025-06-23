@@ -20,7 +20,7 @@
 .internature,
 .deprime {
     display: flex;
-    width: 90vw;
+    width: 90vw !important;
     min-height: 100vh;
 
 }
