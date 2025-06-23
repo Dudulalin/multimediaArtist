@@ -563,12 +563,20 @@ a.link-cv {
 }
 
 @media screen and (min-width: 540px) and (max-width: 650px) {
+
+    .competences-grid h4{
+        font-size: 13.5px;
+    }
+  .internature div.projet-grid h2.project-title {
+        font-size: 25px !important;
+    }
+
     .footer-occupation h4 {
         font-size: 16px;
     }
 
     h1 {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     p {

@@ -14,7 +14,7 @@ div.categories h4 {
 }
 
 .competences .border {
-    width: 65%;
+    width: 85%;
     height: 3px;
     background-color: var(--green);
     align-self: flex-start;
