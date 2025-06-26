@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: flex-end;
+    align-content: center;
     align-items: center;
     transition: height 0.5s ease;
     flex-wrap: wrap;
@@ -21,7 +21,7 @@
 .internature,
 .deprime {
     display: flex;
-    width: 95vw ;
+    width: 95vw;
     min-height: 100vh;
 
 }
@@ -163,6 +163,7 @@
     .projects {
         min-height: 100vh;
         align-items: flex-end;
+        align-content: flex-end;
         margin-top: 20vh;
     }
 
@@ -180,7 +181,8 @@
         border-bottom: 2px solid var(--light-grey);
 
     }
-.internature,
+
+    .internature,
     .aurorae,
     .confort,
     .deprime {
@@ -239,9 +241,10 @@
 
     .description {
         grid-area: 4 / 1 / 5 / 5;
-        width: 100%;
+        width: 95%;
         align-self: center;
         margin-block: 5%;
+        text-align: justify;
     }
 
     .more-info {
@@ -254,7 +257,7 @@
     .more-info .subtitle {
         justify-self: flex-end;
         margin-top: 10%;
-
+        margin-right: 3%;
     }
 
     .more-info .extrainfo {
@@ -292,6 +295,7 @@
 
     .projects {
         min-height: 200vh;
+        align-content: flex-end;
     }
 
     .navigation {
@@ -395,6 +399,7 @@
 
     .projects {
         min-height: 100vh;
+        align-content: flex-end;
     }
 
 

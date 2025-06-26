@@ -15,6 +15,7 @@ div.border {
     display: flex;
     border-bottom: 2px var(--green) solid;
     align-self: flex-end;
+    justify-self: flex-end;
 }
 
 .grid-content {
@@ -74,6 +75,7 @@ div.border {
 
 .about .apps {
     grid-area: 4 / 2 / 5 / 3;
+    border-bottom: 2px var(--green) solid;
 }
 
 .apps .app {
@@ -91,29 +93,31 @@ div.border {
 @media screen and (min-width: 200px) and (max-width: 539px) {
 
     .about {
-        width: 90vw;
-        min-height: 110vh;
-        justify-content: flex-end;
-        align-content: flex-end;
-        margin-bottom: 40vh;
+        width: 95vw;
+        min-height: 120vh;
+        justify-self: flex-end;
+        align-self: flex-end;
+        margin-bottom: 10vh;
     }
 
     .grid-content {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.6fr 0.8fr 0.2fr;
+        grid-template-rows: auto auto auto 0.2fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         width: 98%;
-        height: 90%;
+        height: 80%;
         justify-items: center;
         align-items: center;
         margin-top: 5%;
+
     }
 
     .picture {
         grid-area: 2 / 1 / 3 / 2;
-        width: 70%;
+        height: auto;
+        width: 100%;
         align-self: center;
     }
 
@@ -128,14 +132,15 @@ div.border {
 
     .para {
         grid-area: 3 / 1 / 4 / 2;
-        width: 70%;
+        width: 95%;
+        align-self: flex-start;
     }
 
     .text {
         width: 100%;
-        margin-block: 2% 1%;
-        align-self: center;
-        justify-self: center;
+        margin-block: 5% 1%;
+        align-self: flex-start;
+        justify-self: flex-start;
 
     }
 
@@ -149,8 +154,9 @@ div.border {
         grid-area: 4 / 1 / 5 / 2;
         display: flex;
         flex-direction: row;
-        width: 70%;
-        justify-content: flex-end;
+        width: 100%;
+        margin-top: 5%;
+        justify-content: flex-start;
         border-bottom: 2px var(--green) solid;
         justify-self: center;
     }
@@ -160,7 +166,7 @@ div.border {
     }
 
     .apps .app {
-        margin-right: 0px;
+        margin-right: 10px;
     }
 
     .about .apps img {
@@ -189,6 +195,7 @@ div.border {
         width: 95vw;
         min-height: 100vh;
         justify-self: flex-end;
+        justify-content: flex-end;
     }
 
     .grid-content {

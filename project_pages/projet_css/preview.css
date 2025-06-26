@@ -11,6 +11,12 @@ body {
 }
 
 
+    .preview-polaris {
+        background-image: url("../projects/thumbnail/polaris/preview-big-polaris.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 100%;
+    }
 
 .preview-internature {
     background-image: url("../projects/thumbnail/internature/preview-large.jpg");
@@ -160,6 +166,13 @@ a.btn-see-more {
         background-size: 180%;
     }
 
+    .preview-polaris {
+        background-image: url("../projects/thumbnail/polaris/preview-small-polaris.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 170%;
+    } 
+
     .preview {
         height: 100vh;
         flex-wrap: nowrap;
@@ -238,6 +251,12 @@ a.btn-see-more {
         background-size: 155%;
     }
 
+    .preview-polaris {
+        background-image: url("../projects/thumbnail/polaris/preview-small-polaris.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 140%;
+    } 
     /*
     .preview-aurorae {
         background-image: url("../projects/thumbnail/aurorae/aurorae-big.jpg");
@@ -271,7 +290,12 @@ a.btn-see-more {
         background-position: center;
         background-size: 170%;
     }
-
+.preview-polaris {
+        background-image: url("../projects/thumbnail/polaris/preview-small-polaris.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 140%;
+    } 
     /*
     .preview-aurorae {
         background-image: url("../projects/thumbnail/aurorae/aurorae-big.jpg");
@@ -380,6 +404,12 @@ a.btn-see-more {
         background-size: 165%;
     }
 
+    .preview-polaris {
+        background-image: url("../projects/thumbnail/polaris/preview-small-polaris.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 140%;
+    } 
     /*
     .preview-aurorae {
         background-image: url("../projects/thumbnail/aurorae/aurorae-big.jpg");
@@ -475,6 +505,12 @@ a.btn-see-more {
         background-size: 100%;
     }
 
+.preview-polaris {
+        background-image: url("../projects/thumbnail/polaris/preview-small-polaris.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 140%;
+    } 
     /*
     .preview-aurorae {
         background-image: url("../projects/thumbnail/aurorae/aurorae-big.jpg");
@@ -563,25 +599,31 @@ a.btn-see-more {
 
 @media screen and (min-width: 540px) and (max-width: 767px) {
     .preview-internature {
-        background-image: url("../projects/thumbnail/internature/internature_big.png");
+        background-image: url("../projects/thumbnail/internature/preview-small.jpg");
         background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100%;
+        background-position: left;
+        background-size: 140%;
     }
 
     
+    .preview-polaris {
+        background-image: url("../projects/thumbnail/polaris/preview-small-polaris.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 140%;
+    } 
     .preview-aurorae {
         background-image: url("../projects/thumbnail/aurorae/aurorae-preview-small.jpg");
         background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100%;
+        background-position: left;
+        background-size: 140%;
     }
 
     .preview-confort {
-        background-image: url("../projects/thumbnail/confort/confort-big.jpg");
+        background-image: url("../projects/thumbnail/confort/confort-preview-small.jpg");
         background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100%;
+        background-position: left;
+        background-size: 160%;
     }
 
     .preview {
@@ -664,7 +706,12 @@ a.btn-see-more {
         background-size: 110%;
     }
 
-    
+    .preview-polaris {
+        background-image: url("../projects/thumbnail/polaris/preview-small-polaris.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 110%;
+    }  
     .preview-aurorae {
         background-image: url("../projects/thumbnail/aurorae/aurorae-preview-small.jpg");
         background-repeat: no-repeat;
@@ -736,7 +783,12 @@ a.btn-see-more {
         background-position: left;
         background-size: 110%;
     }
-
+.preview-polaris {
+        background-image: url("../projects/thumbnail/polaris/preview-small-polaris.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 100%;
+    } 
     .preview {
         height: 100vh;
         flex-wrap: nowrap;
@@ -818,6 +870,13 @@ a.btn-see-more {
     }
 
     
+    .preview-polaris {
+        background-image: url("../projects/thumbnail/polaris/preview-small-polaris.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 100%;
+    } 
+
     .preview-aurorae {
         background-image: url("../projects/thumbnail/aurorae/aurorae-preview-small.jpg");
         background-repeat: no-repeat;
@@ -864,15 +923,19 @@ a.btn-see-more {
         background-size: 120%;
     }
 
+    .preview-polaris {
+        background-image: url("../projects/thumbnail/polaris/preview-big-polaris.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 110%;
+    }
+
     .preview {
         height: 100vh;
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
-        background-position: left;
-        background-size: 150%;
-
     }
 
     .preview-box {

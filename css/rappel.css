@@ -46,9 +46,10 @@
     }
 
     .rappel h1 {
-        font-size: 70px;
+        font-size: 40px;
         align-self: center;
         justify-self: center;
+        margin-bottom: 0;
     }
 
     .rappel h2 {
@@ -58,26 +59,26 @@
     }
 
     .rappel h2.first {
-        margin-block: 30%;
+        margin-block: 5%;
         align-self: center;
         justify-self: center;
 
     }
 
     .rappel h2.last {
-        margin-bottom: 30%;
         align-self: center;
         justify-self: center;
+        margin-bottom: 5px;
     }
 
     .rappel-grid .apps {
         display: flex;
-        flex-direction: column;
-        width: 60%;
+        flex-direction: row;
+        width: 70%;
     }
 
     .rappel-grid .apps .app {
-        margin-block: 35%;
+        margin-right: 5%;
 
     }
 
