@@ -1,0 +1,175 @@
+.competences {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+div.categories h4 {
+    color: var(--smoke) !important;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.competences .border {
+    width: 85%;
+    height: 3px;
+    background-color: var(--green);
+    align-self: flex-start;
+}
+
+.competences-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    justify-items: stretch;
+}
+
+.competences-grid .block {
+    border-top: var(--light-grey) solid 2px;
+    padding-block: 2.5%;
+}
+
+.competences-grid .block h2 {
+    color: var(--green);
+    font-weight: 300;
+}
+
+.competences-grid .block div.logiciels h4 {
+    color: var(--grey);
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.competences-grid .block div.logiciels p {
+    color: var(--grey);
+    font-weight: 200;
+}
+
+.competences-grid .block .categories {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2%;
+}
+
+.competences-grid .block .categories h4 {
+
+    color: var(--grey);
+}
+
+.competences-grid .block .logiciels h4,
+.competences-grid .block .logiciels p {
+    color: var(--green);
+}
+
+.competences-header {
+    grid-area: 1 / 1 / 2 / 2;
+
+    margin-block: 8%;
+}
+
+.competences-grid h1 {
+    color: var(--green);
+}
+
+.competences-grid p {
+    margin-top: 1%;
+    width: 65%;
+}
+
+.design-grid {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.interactive-grid {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.video-grid {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.ui-grid {
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+@media screen and (min-width: 150px) and (max-width: 350px) {
+    .competences {
+        height: 95vh;
+    }
+
+    .competences-grid h1 {
+        font-size: 38px;
+    }
+
+    .competences-grid h2 {
+        margin-bottom: 5%;
+    }
+
+    .competences-grid .block .categories {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .competences-grid p {
+        width: 85%;
+        font-size: 18px;
+    }
+
+    .competences-grid .logiciels {
+        margin-top: 5%;
+    }
+
+
+    .competences .border {
+        width: 90%;
+    }
+
+}
+
+@media screen and (min-width: 350px) and (max-width: 410px) {
+    .competences {
+        height: 220vh;
+    }
+
+    .competences-grid h1 {
+        font-size: 38px;
+    }
+
+    .competences-grid h2 {
+        margin-bottom: 5%;
+    }
+
+    .competences-grid .block .categories {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .competences-grid p {
+        width: 85%;
+        font-size: 18px;
+    }
+
+    .competences-grid .logiciels {
+        margin-top: 5%;
+    }
+
+
+    .competences .border {
+        width: 90%;
+    }
+
+}
+
+@media screen and (min-width: 850px) and (max-width: 1024px) {
+    .competences .border {
+        width: 85%;
+    }
+}

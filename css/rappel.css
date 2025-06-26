@@ -1,0 +1,150 @@
+.rappel {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.rappel-grid {
+    display: flex;
+    width: 70%;
+    height: 80%;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rappel div.border-small {
+    width: 10%;
+    background-color: var(--green);
+    height: 3px;
+    margin-bottom: 5%;
+}
+
+.rappel h1 {
+    color: var(--grey);
+    margin-bottom: 30px;
+}
+
+.rappel h2 {
+    color: var(--grey);
+    font-family: Playfair Display;
+    text-align: center;
+}
+
+.rappel h2.last {
+    margin-bottom: 35px;
+}
+
+@media screen and (min-width: 150px) and (max-width: 350px) {
+    .rappel-grid {
+        width: 90%;
+        height: 80%;
+    }
+
+    .rappel h1 {
+        font-size: 40px;
+        align-self: center;
+        justify-self: center;
+        margin-bottom: 0;
+    }
+
+    .rappel h2 {
+        font-size: 32px;
+
+
+    }
+
+    .rappel h2.first {
+        margin-block: 5%;
+        align-self: center;
+        justify-self: center;
+
+    }
+
+    .rappel h2.last {
+        align-self: center;
+        justify-self: center;
+        margin-bottom: 5px;
+    }
+
+    .rappel-grid .apps {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+    }
+
+    .rappel-grid .apps .app {
+        margin-right: 5%;
+
+    }
+
+    .rappel-grid .apps .app img {
+        width: 100%;
+        justify-self: center;
+    }
+
+    .rappel div.bordure {
+        width: 35%;
+    }
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 410px) {
+    .rappel {
+        height: 100vh;
+    }
+
+    .rappel-grid {
+        width: 90%;
+        height: 90%;
+    }
+
+    .rappel h1 {
+        font-size: 60px;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .rappel h2 {
+        font-size: 27px;
+        text-align: center;
+
+    }
+
+    .rappel h2.first {
+        margin-bottom: 5%;
+        align-self: center;
+        justify-self: center;
+
+    }
+
+    .rappel h2.last {
+        align-self: center;
+        justify-self: center;
+    }
+
+    .rappel-grid .apps {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+    }
+
+    .rappel-grid .apps .app {
+        margin-block: 5%;
+
+    }
+
+    .rappel-grid .apps .app img {
+        width: 100%;
+        justify-self: center;
+    }
+
+    .rappel div.bordure {
+        width: 35%;
+    }
+}

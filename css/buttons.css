@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*color palet*/
+:root {
+    --beige: #FFFAF4;
+    --light-grey: #e0e0e0;
+    --grey: #53524E;
+    --green: #565448;
+    --smoke: #11120D;
+}
+
+/*button square*/
+.square-button {
+    width: 150px;
+    height: 150px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--green);
+    border: 2px solid var(--green);
+    background-color: var(--beige);
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 1023px) {
+    .square-button {
+        width: 145px;
+        height: 30px;
+        font-size: 16px;
+        border: 1.5px solid var(--green);
+    }
+
+    .square-button br {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .square-button {
+        width: 90px;
+        height: 90px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+    .square-button {
+        width: 110px;
+        height: 110px;
+        font-size: 18px;
+    }
+}

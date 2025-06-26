@@ -1,0 +1,540 @@
+.projects {
+    min-height: 150vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    transition: height 0.5s ease;
+    flex-wrap: wrap;
+}
+
+.title {
+    color: var(--green);
+    margin-bottom: 10%;
+}
+
+
+.aurorae,
+.confort,
+.internature,
+.deprime {
+    display: flex;
+    width: 95vw;
+    min-height: 100vh;
+
+}
+
+.projet-grid {
+    display: grid;
+    grid-template-columns: auto 0.6fr 0.2fr 0.7fr 0.2fr 0.13fr;
+    grid-template-rows: 0.6fr 0.4fr 1.5fr 0.3fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    margin-top: 2%;
+    width: 100%;
+    height: 80%;
+}
+
+.classification {
+    grid-area: 1 / 6 / 5 / 7;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    align-self: center;
+    justify-self: flex-end;
+    border-right: var(--green) 2px solid;
+    text-transform: uppercase;
+}
+
+.btn-more {
+    grid-area: 4 / 5 / 5 / 6;
+    align-self: flex-end;
+    justify-self: center;
+}
+
+.worktype {
+    grid-area: 4 / 1 / 5 / 2;
+    align-self: flex-end;
+    text-transform: uppercase;
+
+    font-weight: 500;
+    color: var(--smoke);
+    font-size: 12px;
+
+}
+
+.description {
+    grid-area: 4 / 2 / 5 / 5;
+    align-self: flex-end;
+    color: var(--smoke);
+}
+
+.more-info {
+    grid-area: 2 / 4 / 3 / 5;
+
+}
+
+.more-info .subtitle {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: var(--green);
+}
+
+.img-small {
+    grid-area: 1 / 4 / 2 / 5;
+    width: 100%;
+}
+
+.img-big {
+    grid-area: 2 / 2 / 4 / 3;
+    width: 100%;
+    height: auto;
+    align-self: flex-end;
+}
+
+.project-title {
+    grid-area: 2 / 3 / 4 / 4;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    align-self: center;
+    justify-self: flex-start;
+    color: var(--grey);
+}
+
+/*
+.projects>div:nth-child(even) .projet-grid {
+
+    display: grid;
+    grid-template-columns: 0.2fr 0.4fr 0.7fr 0.3fr 0.6fr 0.3fr;
+    grid-template-rows: 0.5fr 0.4fr 1.5fr 0.3fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 2%;
+    width: 100%;
+    height: 80%;
+}
+
+.projects>div:nth-child(even) .classification {
+    grid-area: 1 / 1 / 5 / 2;
+    border-left: var(--green) 5px solid;
+    border-right: transparent 0 solid;
+    padding-left: 10px;
+}
+
+.projects>div:nth-child(even) .btn-more {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.projects>div:nth-child(even) .description {
+    grid-area: 4 / 3 / 5 / 6;
+}
+
+.projects>div:nth-child(even) .worktype {
+    grid-area: 4 / 6 / 5 / 7;
+    padding-left: 40px;
+}
+
+.projects>div:nth-child(even) .img-small {
+    grid-area: 1 / 3 / 2 / 4;
+    width: 100%;
+}
+
+.projects>div:nth-child(even) .more-info {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.projects>div:nth-child(even) .img-big {
+    grid-area: 2 / 5 / 4 / 6;
+    height: 100%;
+}
+
+.projects>div:nth-child(even) .project-title {
+    grid-area: 2 / 4 / 4 / 5;
+    justify-self: flex-end;
+    padding-right: 20px;
+}
+*/
+@media screen and (min-width: 200px) and (max-width: 529px) {
+
+    .projects {
+        min-height: 100vh;
+        align-items: flex-end;
+        align-content: flex-end;
+        margin-top: 20vh;
+    }
+
+    .navigation {
+        margin-block: 10%;
+    }
+
+
+    .navigation .filters {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+        border-bottom: 2px solid var(--light-grey);
+
+    }
+
+    .internature,
+    .aurorae,
+    .confort,
+    .deprime {
+        display: flex;
+        width: 90vw;
+        min-height: 100vh;
+
+    }
+
+    .projet-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 0.05fr) 0.6fr 0.4fr 0.15fr 0.10fr 0.1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .project-title {
+        margin-top: 10%;
+        grid-area: 1 / 1 / 2 / 3;
+        writing-mode: horizontal-tb;
+        align-self: flex-end;
+        font-size: 30px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+
+    .worktype {
+        grid-area: 2 / 2 / 3 / 5;
+        /* justify-self: end; */
+        align-self: start;
+        justify-self: end;
+        text-align: center;
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .worktype span {
+        margin-left: 45%;
+    }
+
+
+    .img-big {
+        grid-area: 3 / 1 / 4 / 5;
+        width: 100%;
+        height: auto;
+        align-self: flex-end;
+        margin-top: 5%;
+    }
+
+    .img-small {
+        visibility: hidden;
+    }
+
+    .description {
+        grid-area: 4 / 1 / 5 / 5;
+        width: 95%;
+        align-self: center;
+        margin-block: 5%;
+        text-align: justify;
+    }
+
+    .more-info {
+        margin-right: 3%;
+        grid-area: 5 / 2 / 6 / 5;
+        align-self: flex-end;
+
+    }
+
+    .more-info .subtitle {
+        justify-self: flex-end;
+        margin-top: 10%;
+        margin-right: 3%;
+    }
+
+    .more-info .extrainfo {
+        justify-self: flex-end;
+        width: 90%;
+        text-align: justify;
+        margin-bottom: 2%;
+        margin-right: 3%;
+    }
+
+    .btn-more {
+        grid-area: 6 / 3 / 7 / 5;
+        align-self: flex-start;
+        justify-self: flex-end;
+        margin-bottom: 10%;
+        margin-right: 3%;
+
+    }
+
+
+
+    .classification {
+        grid-area: 7 / 1 / 8 / 5;
+        text-align: end;
+        width: 90%;
+        writing-mode: horizontal-tb;
+        border-inline: 0px solid var(--green);
+        border-bottom: var(--green) 5px solid;
+        align-self: start;
+    }
+
+}
+
+@media screen and (min-width: 530px) and (max-width: 830px) {
+
+    .projects {
+        min-height: 200vh;
+        align-content: flex-end;
+    }
+
+    .navigation {
+        margin-block: 10%;
+    }
+
+
+    .navigation .filters {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+        border-bottom: 2px solid var(--light-grey);
+
+    }
+
+    .aurorae,
+    .confort,
+    .internature,
+    .deprime {
+        display: flex;
+        min-height: 100vh;
+
+    }
+
+    .projet-grid {
+        display: grid;
+        grid-template-columns: 0.6fr 0.5fr;
+        grid-template-rows: 0.2fr 0.15fr 0.2fr 0.6fr 0.4fr 0.35fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 0px;
+    }
+
+
+    .project-title {
+        grid-area: 1 / 2 / 2 / 3;
+        writing-mode: horizontal-tb;
+
+    }
+
+    .worktype {
+        font-size: 16px;
+        width: 100%;
+        grid-area: 2 / 2 / 3 / 3;
+        align-self: center;
+        text-align: start;
+    }
+
+    .worktype span {
+        margin-left: 15%;
+
+    }
+
+    .btn-more {
+        grid-area: 3 / 2 / 4 / 3;
+        align-self: flex-start;
+    }
+
+    .img-small {
+        grid-area: 4 / 2 / 5 / 3;
+        align-self: flex-end;
+        width: 95%;
+    }
+
+    .img-big {
+        grid-area: 1 / 1 / 5 / 2;
+        width: 100%;
+        height: auto;
+        align-self: flex-end;
+    }
+
+    .more-info {
+        grid-area: 5 / 2 / 6 / 3;
+        text-align: justify;
+        width: 95%;
+
+    }
+
+    .description {
+        grid-area: 5 / 1 / 6 / 2;
+        align-self: flex-start;
+        padding-top: 5%;
+        text-align: justify;
+    }
+
+    .classification {
+        width: 100%;
+        grid-area: 6 / 1 / 7 / 3;
+        border-right: 0px var(--green) solid;
+        border-bottom: var(--green) 3px solid;
+        writing-mode: horizontal-tb;
+        justify-self: flex-end;
+        text-align: right;
+        padding: 2% 2%;
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: 831px) and (max-width: 1023px) {
+
+    .projects {
+        min-height: 100vh;
+        align-content: flex-end;
+    }
+
+
+    .aurorae,
+    .confort,
+    .internature,
+    .deprime {
+        display: flex;
+        width: 95vw;
+        min-height: 100vh;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-self: flex-end;
+
+    }
+
+    .projet-grid {
+        display: grid;
+        grid-template-columns: 0.6fr 0.5fr;
+        grid-template-rows: 0.2fr auto 0.2fr 0.6fr 0.4fr 0.35fr;
+        grid-column-gap: 50px;
+        grid-row-gap: 0px;
+    }
+
+    .project-title {
+        grid-area: 1 / 2 / 2 / 3;
+        writing-mode: horizontal-tb;
+        align-self: flex-end;
+
+    }
+
+    .worktype {
+        width: 70%;
+        grid-area: 2 / 2 / 3 / 3;
+        align-self: center;
+        justify-self: center;
+        text-align: start;
+        margin-bottom: 1%;
+    }
+
+    .worktype span {
+        margin-left: 15%;
+
+    }
+
+    .btn-more {
+        grid-area: 3 / 2 / 4 / 3;
+        align-self: flex-start;
+    }
+
+    .img-small {
+        grid-area: 4 / 2 / 5 / 3;
+        align-self: flex-end;
+        width: 95%;
+    }
+
+    .img-big {
+        grid-area: 1 / 1 / 5 / 2;
+        width: 100%;
+        height: auto;
+        align-self: flex-end;
+    }
+
+    .more-info {
+        grid-area: 5 / 2 / 6 / 3;
+        text-align: justify;
+        margin-right: 5%;
+
+    }
+
+    .description {
+        grid-area: 5 / 1 / 6 / 2;
+        align-self: flex-start;
+        padding-top: 5%;
+        text-align: justify;
+    }
+
+    .classification {
+        width: 90%;
+        grid-area: 6 / 1 / 7 / 3;
+        border-right: 0px var(--green) solid;
+        border-bottom: var(--green) 5px solid;
+        writing-mode: horizontal-tb;
+        justify-self: flex-end;
+        text-align: right;
+        padding: 2% 2%;
+        align-self: center;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1800px) {
+
+    .aurorae,
+    .confort,
+    .internature,
+    .deprime {
+        display: flex;
+        height: 100vh;
+    }
+
+    .img-small {
+
+        align-self: end;
+    }
+
+    .img-big {
+
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: 2500px) {
+
+    .aurorae,
+    .confort,
+    .interactive,
+    .deprime {
+        width: 85VW;
+        display: flex;
+        height: 20vh;
+    }
+
+    .img-big {
+        width: 100%;
+    }
+
+    .img-small {
+        width: 100%;
+    }
+
+    .projet-grid {
+
+        grid-template-columns: auto auto 0.2fr 0.5fr 0.2fr auto;
+        grid-template-rows: 0.6fr 0.4fr 1.5fr 0.3fr;
+
+    }
+}

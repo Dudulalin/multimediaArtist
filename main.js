@@ -1,18 +1,37 @@
+//--------------------------------navbar-----------------------------------
+// Toggle the menu
 
+const burger = document.getElementById('burger');
+    const overlay = document.getElementById('menuOverlay');
+
+    burger.addEventListener('click', () => {
+      overlay.classList.toggle('open');
+      burger.classList.toggle('toggle');
+    });
+
+    // Optional: close menu when a link is clicked
+    document.querySelectorAll('.overlay a').forEach(link => {
+      link.addEventListener('click', () => {
+        overlay.classList.remove('open');
+        burger.classList.remove('toggle');
+      });
+    });
+
+      
         
 //-------------------------------------cv button-----------------------------------
 const btnCv = document.querySelector(".cv-button");
 
 
 btnCv.addEventListener("click", () => {
-    const pdfUrl = "./media/file/cv_yi_sitmonternna.pdf"; // Replace with your actual PDF URL
+    const pdfUrl = "./media/documents/cv.pdf"; // Replace with your actual PDF URL
     window.open(pdfUrl, "_blank");
 });
 //-------------------------------------go up-----------------------------------
-const logo = document.querySelector("h1");
+const logo = document.querySelector(".header-logo");
 
 document.addEventListener("DOMContentLoaded", () => {
-    const logo = document.querySelector("h1");
+    const logo = document.querySelector(".header-logo");
     logo.addEventListener("click", () => {
         window.scrollTo({
             top: 0,
@@ -20,3 +39,41 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+  
+//--------------------------------projet filter-----------------------------------
+/*
+const filters = document.querySelectorAll('.filter');
+const projects = document.querySelectorAll('.projet');
+const projectsSection = document.getElementById('projects');
+
+filters.forEach(filter => {
+    filter.addEventListener('click', () => {
+        const filterValue = filter.getAttribute('data-filter');
+
+        // Toggle active class
+        filters.forEach(f => f.classList.remove('active'));
+        filter.classList.add('active');
+
+        // Filter projects
+        projects.forEach(proj => {
+            if (filterValue === 'all' || proj.classList.contains(filterValue)) {
+                proj.style.display = 'block';
+            } else {
+                proj.style.display = 'none';
+            }
+        });
+
+        // Count visible projects
+        const visibleProjects = Array.from(projects).filter(proj => proj.style.display === 'block').length;
+
+        // Adjust section height based on visible projects
+        projectsSection.style.height = `${visibleProjects * 180}vh`;
+    });
+});
+
+// Trigger default filter to show all on load and set correct height
+window.addEventListener('load', () => {
+    document.querySelector('.filter[data-filter="all"]').click();
+});
+*/
